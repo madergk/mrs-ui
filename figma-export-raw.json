@@ -1,0 +1,718 @@
+{
+  "meta": {
+    "extractedAt": "2025-12-15T22:00:18.998Z",
+    "figmaFileId": "ESNP5KunFotGObfcuXZ9Op",
+    "figmaFileName": "MRS - Material UI v.7.2.0",
+    "figmaVersion": "2297906815940186739",
+    "totalStyles": 101
+  },
+  "styles": {
+    "41:91": {
+      "key": "750bbf9a8d870b18b7259bf48fac96659bb28dd9",
+      "name": "typography/body2",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "41:93": {
+      "key": "5c35057c76f96b41d3f9ddbb1edbfee0abe9f99a",
+      "name": "typography/subtitle2",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "41:90": {
+      "key": "7c8172f2074be541c08856ad0f8c61b216568712",
+      "name": "typography/body1",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "71:370658": {
+      "key": "daf7aacb639472adb3cb8823dcff57ba0077aef3",
+      "name": "*library/heading",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "41:94": {
+      "key": "b5e3146f292898e1ad4f2f0c89d8e22bda77d07e",
+      "name": "typography/caption",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "4201:24574": {
+      "key": "66c55a9cd31ade7cf95cebbc6ae9a4e94a148328",
+      "name": "input/label",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "1039:29482": {
+      "key": "d867e7777fb2a6a1c11d6bc2ac39b28dd6861399",
+      "name": "avatar/initialsSm",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "4201:27571": {
+      "key": "ec070141412d02378c1bf7794147fa355f24ee9f",
+      "name": "chip/label",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "13610:87487": {
+      "key": "7a14ab1abb81fde1237e9248f19f08e67e1aaae1",
+      "name": "icon/outlined/inherit",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "4201:24576": {
+      "key": "26675a14f1d165ee7b0dce0793bf55811c24ea2e",
+      "name": "input/value",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "13610:87484": {
+      "key": "a2dde2784b5b19ac2417c398726967927ac0e712",
+      "name": "icon/outlined/medium",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "4201:24575": {
+      "key": "7ddc63a120aa243f04ed7f18d1a87b85c8bf0f62",
+      "name": "input/helper",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "7285:41100": {
+      "key": "d0481fb92511e09640a303706a6ddb0bb2c821cc",
+      "name": "menu/itemDefault",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "87:6255": {
+      "key": "556d3254eb26b6d8244593bbbbffb388b597d5b2",
+      "name": "elevation/8",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "1533:30770": {
+      "key": "bbabd0f611bb0bf3d06ba2646755fe38a4652ae3",
+      "name": "*library/clickableLayer",
+      "styleType": "FILL",
+      "remote": false,
+      "description": ""
+    },
+    "13610:87486": {
+      "key": "04a8de0093a4da9987366884a73846c2c8726a6d",
+      "name": "icon/outlined/small",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "255:4": {
+      "key": "68c96db4896e6aeb9c509b5b09b049a56ffd17a5",
+      "name": "button/medium",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "76:1": {
+      "key": "6f04d8c7f91a7752f216960380637212488b3372",
+      "name": "elevation/2",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "170:9004": {
+      "key": "4583d60a901034d76df6127b16aea790c212a216",
+      "name": "elevation/6",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "170:8990": {
+      "key": "d3d044b7b020073beabaadbdfccee69208d0ba19",
+      "name": "elevation/1",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "3880:12721": {
+      "key": "1f38d897a36ff15972eccdbe2bbcded856643d08",
+      "name": "button/small",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "3880:12720": {
+      "key": "02290c09c260fe54b30e281b5dae619f6663fa98",
+      "name": "button/large",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "4201:24639": {
+      "key": "648c5f155f4335313b6200a184aab491da2c171a",
+      "name": "avatar/initialsLg",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "6667:49262": {
+      "key": "612dd84443352e4a2fe622add689997e7698f1ad",
+      "name": "badge/label",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "13610:87492": {
+      "key": "b63f4447edfed1a3cd279b5ec578619b0aa6ae13",
+      "name": "icon/filled/medium",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "1039:49175": {
+      "key": "72b692275141ffcde75cdf97a04b59271d081938",
+      "name": "avatar/initialsMd",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "41:92": {
+      "key": "536eb8f7dcdd352480faf283490b76e8fe1d00c4",
+      "name": "typography/subtitle1",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "41:101": {
+      "key": "eb623f339632027c6f033a6243e5f12737068696",
+      "name": "typography/overline",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "41:87": {
+      "key": "1ceace8cd7b73effdea39e8fc72102827460f1b4",
+      "name": "typography/h4",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "41:86": {
+      "key": "dec640f0ebee4a601caf0d6af90652c780c8d9ea",
+      "name": "typography/h3",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "41:88": {
+      "key": "1d81158d6ec063e5c07702988b0337a4215f5d9a",
+      "name": "typography/h5",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "71:388708": {
+      "key": "9fb468c99fe3e60ae1d694671ba8c35432f98722",
+      "name": "datePicker/currentMonth",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "4232:23402": {
+      "key": "999650c12a88e829aa54fd35d49e0ff8a2c717b2",
+      "name": "table/header",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "4209:0": {
+      "key": "1dc059aad1566ae5f785df40866648429d616bc7",
+      "name": "tooltip/label",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "4209:2936": {
+      "key": "bf5c1d62f199e2373c3c71f5fc4092309c7dfd8c",
+      "name": "alert/title",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "13610:87485": {
+      "key": "6af724f363bde3cab22003581bcc2a18f558b138",
+      "name": "icon/outlined/large",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "1533:43652": {
+      "key": "7922f1faebef58dd1529d93da07ecb6332acecd5",
+      "name": "*library/colorHighlight",
+      "styleType": "FILL",
+      "remote": false,
+      "description": ""
+    },
+    "1533:52509": {
+      "key": "5b1f1200ac18c2af3d0870a5b872986d691a0ed2",
+      "name": "*library/fillHighlight",
+      "styleType": "FILL",
+      "remote": false,
+      "description": ""
+    },
+    "170:9006": {
+      "key": "36774fb9acfb67a1beb59095d37813ecb9fd543b",
+      "name": "elevation/16",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "8086:83643": {
+      "key": "3ca93da62bdf338f976094a651dabc0d06f779ff",
+      "name": "bottomNavigation/activeLabel",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "41:84": {
+      "key": "22f973e0c9b8c46111a42a1b213366b2e8146586",
+      "name": "typography/h1",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "41:85": {
+      "key": "8c5b915004c445d4c77d0c478e57b5a8c644f369",
+      "name": "typography/h2",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "41:89": {
+      "key": "3451c6a129a9a17454b183adf78484a6c1fc7415",
+      "name": "typography/h6",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "170:9007": {
+      "key": "7df5951e5bd87f04f9f797712c2c441cbbc82cd7",
+      "name": "elevation/24",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "3750:14": {
+      "key": "86febb37722318b641556222dc481767d8cd797e",
+      "name": "elevation/23",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "3750:13": {
+      "key": "3698ebeb5d0ec7544d2fe55105992f9ab86c4d2f",
+      "name": "elevation/22",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "3750:12": {
+      "key": "a85e3ea121fbe3a21636399d31f8cc6e1ea08b6d",
+      "name": "elevation/21",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "3750:11": {
+      "key": "19e6bf377615bd0abc9dad61d976bee263663264",
+      "name": "elevation/20",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "3750:10": {
+      "key": "6c8fa0b00c23d4cf62ab1a4742593db35ce9b3b4",
+      "name": "elevation/19",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "3750:9": {
+      "key": "3814be4a59e55b6336ee2b31c115f1e140f3156a",
+      "name": "elevation/18",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "3750:8": {
+      "key": "b22e8040f198974ce3c1347061743887e7d20639",
+      "name": "elevation/17",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "3750:7": {
+      "key": "eb5e502279068537221cc60281425535a5037f17",
+      "name": "elevation/15",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "3750:6": {
+      "key": "21b572d3eeb838c261cb46ea79aca9df695ab939",
+      "name": "elevation/14",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "3750:5": {
+      "key": "a2cdc0b3dc47cf35e1990da2da980ab395d177ac",
+      "name": "elevation/13",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "170:9005": {
+      "key": "fae099a72984ddc458550cba18b088b2dd167c83",
+      "name": "elevation/12",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "3742:13813": {
+      "key": "4e335634e4d9083decf86c6ffd450ea741e6f9f9",
+      "name": "elevation/9",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "3750:3": {
+      "key": "f5bfa7b8444f67a752a9e856c7053488167ba510",
+      "name": "elevation/10",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "3750:4": {
+      "key": "32ec55d2674b351f49ca207b8de7085a0eb90508",
+      "name": "elevation/11",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "3742:13812": {
+      "key": "0f3628478c021208fe683e1332938002182e066d",
+      "name": "elevation/7",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "170:8994": {
+      "key": "1a8508f2ad9459b77fb732b5aa784950bb79735b",
+      "name": "elevation/5",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "86:1963": {
+      "key": "cf42a130e9d3b6feba7f21bd1f24166fe7dc122b",
+      "name": "elevation/4",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "170:8992": {
+      "key": "68dd262cdb4aadd7ffac6a3bf7ae800d47804217",
+      "name": "elevation/3",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "58:4027": {
+      "key": "f841ea7a9d599a60132def554f394c6e900f3194",
+      "name": "primary/dark",
+      "styleType": "FILL",
+      "remote": false,
+      "description": "Used for hover states. Reflects the primary.dark variable from the theme object"
+    },
+    "7314:47169": {
+      "key": "9e653d9b07a24c22a07a2f4596823a1a6d5a616f",
+      "name": "list/subheader",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "11609:175201": {
+      "key": "6287aff50bbd4238415958782c702128f04bb06d",
+      "name": "alert/description",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "7664:80145": {
+      "key": "2b9279e839bc44855c3da0588234f5fa9ba64d30",
+      "name": "breakpoints/sm",
+      "styleType": "GRID",
+      "remote": false,
+      "description": "Max width 600px"
+    },
+    "7664:79843": {
+      "key": "f7b4c882b550d2692647caed8fecffce08254fb0",
+      "name": "breakpoints/lg",
+      "styleType": "GRID",
+      "remote": false,
+      "description": "Max width 1200px"
+    },
+    "13610:87493": {
+      "key": "85b1358362067a7eb540f9761123068ac4814293",
+      "name": "icon/filled/large",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "13610:87494": {
+      "key": "463e3aec314408d56ee8168ea4c190ac44385e2d",
+      "name": "icon/filled/small",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "13610:87495": {
+      "key": "a38aff466001e41f7ac81269b21cbb14e84ca37d",
+      "name": "icon/filled/inherit",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "8365:83492": {
+      "key": "559a0cd32ff15cd9ac2755006a4656f33ca5f3d8",
+      "name": "typography/H4",
+      "styleType": "TEXT",
+      "remote": true,
+      "description": ""
+    },
+    "13702:64152": {
+      "key": "89974634a084ab85b86bf79e0a160cefb1f1d9b5",
+      "name": "Paleta RedSalud/Negro Plomo 004",
+      "styleType": "FILL",
+      "remote": true,
+      "description": ""
+    },
+    "13702:64144": {
+      "key": "71f40ff32a67d4c15b151add8b6c3faf25ff1bb0",
+      "name": "Tipográficos/Marengo alto",
+      "styleType": "FILL",
+      "remote": true,
+      "description": "Use para títulos o rótulos, negritas y llamados de acción"
+    },
+    "7671:84437": {
+      "key": "b6355314c1563f037aa8f36dae09681be7fad986",
+      "name": "breakpoints/xs",
+      "styleType": "GRID",
+      "remote": false,
+      "description": "Max width 444px"
+    },
+    "7285:41101": {
+      "key": "ed40c815d88df8a43326b3f5024c382c64f5a34d",
+      "name": "menu/itemDense",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "6724:42217": {
+      "key": "fed56bf5601631df0234f0b3844ef6e6c41d6825",
+      "name": "breakpoints/xl",
+      "styleType": "GRID",
+      "remote": false,
+      "description": ""
+    },
+    "7664:79997": {
+      "key": "d7727ab1b2e728d926daab35cef493bab69ae6a4",
+      "name": "breakpoints/md",
+      "styleType": "GRID",
+      "remote": false,
+      "description": "Max width 900px"
+    },
+    "13745:4117": {
+      "key": "3ef587891df3f37e1aa8a4aef180a1621e2474f3",
+      "name": "typography/caption",
+      "styleType": "TEXT",
+      "remote": true,
+      "description": ""
+    },
+    "13745:4227": {
+      "key": "6be0f39ddf378313e54c4d42ed23868044ea7107",
+      "name": "button/small",
+      "styleType": "TEXT",
+      "remote": true,
+      "description": ""
+    },
+    "13742:6524": {
+      "key": "56513373c482d5ae8fbf48bf0e4e2ffd2a2c7cce",
+      "name": "tooltip/label",
+      "styleType": "TEXT",
+      "remote": true,
+      "description": ""
+    },
+    "13742:6323": {
+      "key": "321dd6c0e12c7fae14d98e10282acd20b94d5d21",
+      "name": "chip/label",
+      "styleType": "TEXT",
+      "remote": true,
+      "description": ""
+    },
+    "609:99240": {
+      "key": "8d752cfd0cedd8c13d2172e7870161f36e7c1c90",
+      "name": "breakpoints/fullWidth",
+      "styleType": "GRID",
+      "remote": false,
+      "description": ""
+    },
+    "873:95475": {
+      "key": "eb99c3d63713f162c5b19ae2f80f275f0f16106f",
+      "name": "dataGrid/aggregationColumnHeaderLabel",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "1533:1172746": {
+      "key": "dd012519f2c1ae190e3d217665a29ccd462767ee",
+      "name": "charts/group",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "13610:86811": {
+      "key": "0b4ba0eb35f559c4f034e96fe0592fe5dabf544b",
+      "name": "table/header",
+      "styleType": "TEXT",
+      "remote": true,
+      "description": ""
+    },
+    "13733:6603": {
+      "key": "7e5cbfc945e6ee03b31c31cbef6850caade9a70b",
+      "name": "Paleta RedSalud/Verde Veronés  001",
+      "styleType": "FILL",
+      "remote": true,
+      "description": ""
+    },
+    "13745:4121": {
+      "key": "7d1b79a8bd33dad9e5ced88e81ce87b8b3d3caa5",
+      "name": "typography/h5",
+      "styleType": "TEXT",
+      "remote": true,
+      "description": ""
+    },
+    "13779:22088": {
+      "key": "5dfb81655dc5cad3ef181a5a89643aaa811e2279",
+      "name": "Paleta Primaria/Complementario 016",
+      "styleType": "FILL",
+      "remote": true,
+      "description": ""
+    },
+    "13779:22089": {
+      "key": "8d4dc7a2610320f10453002f95360cc316834de0",
+      "name": "body1/bold",
+      "styleType": "TEXT",
+      "remote": true,
+      "description": ""
+    },
+    "13733:6604": {
+      "key": "a3dc27b728246fb82b103e697bef1f7b4ba16e7f",
+      "name": "Tipográficos/Marengo alto",
+      "styleType": "FILL",
+      "remote": true,
+      "description": "Use para títulos o rótulos, negritas y llamados de acción"
+    },
+    "13779:21871": {
+      "key": "095c1161bd379fa945b0fa4edcaeb69edef9420e",
+      "name": "button/button-sm",
+      "styleType": "TEXT",
+      "remote": true,
+      "description": ""
+    },
+    "13779:22143": {
+      "key": "d1ce5c7273e0d8c53614fa48f68f1079b4dde8a5",
+      "name": "Tipográficos/Marengo 036",
+      "styleType": "FILL",
+      "remote": true,
+      "description": "Use este color para texto de lectura o contenido informativo"
+    },
+    "13779:22144": {
+      "key": "5614c3fabee39acd1cac9959e2bbc35364d2271b",
+      "name": "body1/regular",
+      "styleType": "TEXT",
+      "remote": true,
+      "description": ""
+    },
+    "13779:22145": {
+      "key": "ee2adf2afd0a2f259674c85adf366dcc952d02ea",
+      "name": "Paleta RedSalud/Verde Veronés  001",
+      "styleType": "FILL",
+      "remote": true,
+      "description": ""
+    },
+    "13779:22141": {
+      "key": "ff3ca0c7c7652793d272b1d30d6ad09a00e965dd",
+      "name": "Paleta RedSalud/Blanco 005",
+      "styleType": "FILL",
+      "remote": true,
+      "description": ""
+    },
+    "13779:22142": {
+      "key": "a35fa7c8e145c2a8ff0aa5a4d0062b8f0b151e9c",
+      "name": "Tipográficos/Marengo 032",
+      "styleType": "FILL",
+      "remote": true,
+      "description": "Use este tono para textos o elementos deshabilitados, estados de acción disable"
+    },
+    "13702:3177": {
+      "key": "be3d748f04d57ec7244c4d8c669f7362b1d03c46",
+      "name": "Paleta RedSalud/Blanco 005",
+      "styleType": "FILL",
+      "remote": true,
+      "description": ""
+    },
+    "13779:22153": {
+      "key": "861dc64b35e8575aeebe1f0ff10e0536a6f8af58",
+      "name": "Tipográficos/Marengo 036",
+      "styleType": "FILL",
+      "remote": true,
+      "description": "Use este color para texto de lectura o contenido informativo"
+    },
+    "13779:21856": {
+      "key": "128eff1bf63af6da1af90e813a9313281f0e2c8e",
+      "name": "button/button-lg",
+      "styleType": "TEXT",
+      "remote": true,
+      "description": ""
+    },
+    "13779:21866": {
+      "key": "03104642671e9f0055ff2c69073fab0b5e8fb261",
+      "name": "button/button-md",
+      "styleType": "TEXT",
+      "remote": true,
+      "description": ""
+    },
+    "13733:6580": {
+      "key": "94cf5e7dc1643958db374bf35591bdd63d3f2494",
+      "name": "Paleta Primaria/Complementario 018",
+      "styleType": "FILL",
+      "remote": true,
+      "description": ""
+    }
+  }
+}
