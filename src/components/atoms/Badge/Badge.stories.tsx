@@ -16,7 +16,8 @@ const meta: Meta<typeof Badge> = {
   parameters: {
     docs: {
       description: {
-        component: 'Badge component for showing notifications. Typically wraps Avatar or IconButton.',
+        component:
+          'Badge component for showing notifications. Typically wraps Avatar or IconButton.',
       },
     },
   },
@@ -154,4 +155,3 @@ export const MaxValue: Story = {
     </Stack>
   ),
 };
-

@@ -1,6 +1,6 @@
 /**
  * Typography Component
- * 
+ *
  * Text display component that uses theme typography tokens.
  * Wraps Material-UI Typography with MRS design system tokens.
  */
@@ -27,7 +27,7 @@ export interface TypographyProps extends MuiTypographyProps {
 
 /**
  * Typography component that consumes theme typography tokens
- * 
+ *
  * @example
  * ```tsx
  * <Typography variant="h1">Heading 1</Typography>
@@ -48,4 +48,3 @@ export const Typography: React.FC<TypographyProps> = ({
 };
 
 export default Typography;
-

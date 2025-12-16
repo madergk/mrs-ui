@@ -40,4 +40,3 @@ describe('Paper', () => {
     expect(screen.getByTestId('paper-test')).toBeInTheDocument();
   });
 });
-

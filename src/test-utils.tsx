@@ -1,6 +1,6 @@
 /**
  * Test Utilities
- * 
+ *
  * Common utilities for testing components that require theme context.
  */
 
@@ -25,4 +25,3 @@ export const renderWithTheme = (
 
 // Re-export everything from @testing-library/react
 export * from '@testing-library/react';
-

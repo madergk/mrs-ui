@@ -1,6 +1,6 @@
 /**
  * Link Component
- * 
+ *
  * Text link component.
  * Uses theme tokens for styling.
  */
@@ -13,12 +13,33 @@ export interface LinkProps extends MuiLinkProps {
    * Link variant
    * @default 'body1'
    */
-  variant?: 'body1' | 'body2' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'subtitle1' | 'subtitle2' | 'caption' | 'overline';
+  variant?:
+    | 'body1'
+    | 'body2'
+    | 'h1'
+    | 'h2'
+    | 'h3'
+    | 'h4'
+    | 'h5'
+    | 'h6'
+    | 'subtitle1'
+    | 'subtitle2'
+    | 'caption'
+    | 'overline';
   /**
    * Link color
    * @default 'primary'
    */
-  color?: 'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success' | 'inherit' | 'textPrimary' | 'textSecondary';
+  color?:
+    | 'primary'
+    | 'secondary'
+    | 'error'
+    | 'warning'
+    | 'info'
+    | 'success'
+    | 'inherit'
+    | 'textPrimary'
+    | 'textSecondary';
   /**
    * Underline style
    * @default 'hover'
@@ -36,7 +57,7 @@ export interface LinkProps extends MuiLinkProps {
 
 /**
  * Link component that consumes theme tokens
- * 
+ *
  * @example
  * ```tsx
  * <Link href="/about">About</Link>
@@ -53,18 +74,10 @@ export const Link: React.FC<LinkProps> = ({
   ...props
 }) => {
   return (
-    <MuiLink
-      href={href}
-      variant={variant}
-      color={color}
-      underline={underline}
-      sx={sx}
-      {...props}
-    >
+    <MuiLink href={href} variant={variant} color={color} underline={underline} sx={sx} {...props}>
       {children}
     </MuiLink>
   );
 };
 
 export default Link;
-

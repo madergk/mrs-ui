@@ -1,6 +1,6 @@
 /**
  * IconButton Component
- * 
+ *
  * Icon-only button component.
  * Uses theme tokens for styling and follows MRS design system rules.
  */
@@ -19,7 +19,15 @@ export interface IconButtonProps extends MuiIconButtonProps {
    * Icon button color
    * @default 'primary'
    */
-  color?: 'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success' | 'inherit' | 'default';
+  color?:
+    | 'primary'
+    | 'secondary'
+    | 'error'
+    | 'warning'
+    | 'info'
+    | 'success'
+    | 'inherit'
+    | 'default';
   /**
    * Edge position for icon
    */
@@ -28,7 +36,7 @@ export interface IconButtonProps extends MuiIconButtonProps {
 
 /**
  * IconButton component that consumes theme tokens
- * 
+ *
  * @example
  * ```tsx
  * import { Icon } from '../Icon';
@@ -50,7 +58,9 @@ export const IconButton: React.FC<IconButtonProps> = ({
   // Get color palette (handle 'inherit' and 'default' cases)
   const getColorPalette = () => {
     if (color === 'inherit' || color === 'default') return theme.palette.primary;
-    return theme.palette[color as 'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success'];
+    return theme.palette[
+      color as 'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success'
+    ];
   };
 
   const colorPalette = getColorPalette();
@@ -63,9 +73,10 @@ export const IconButton: React.FC<IconButtonProps> = ({
       sx={{
         // Use theme state tokens for hover and focus
         '&:focus-visible': {
-          outline: '_states' in colorPalette
-            ? `2px solid ${(colorPalette as any)._states?.focusVisible}`
-            : undefined,
+          outline:
+            '_states' in colorPalette
+              ? `2px solid ${(colorPalette as any)._states?.focusVisible}`
+              : undefined,
           outlineOffset: '2px',
         },
         ...sx,
@@ -76,4 +87,3 @@ export const IconButton: React.FC<IconButtonProps> = ({
 };
 
 export default IconButton;
-

@@ -1,6 +1,6 @@
 /**
  * Chip Component
- * 
+ *
  * Tag/label component for displaying information.
  * Uses theme tokens for styling and follows MRS design system rules.
  */
@@ -49,11 +49,11 @@ export interface ChipProps extends Omit<MuiChipProps, 'variant' | 'size' | 'colo
 
 /**
  * Chip component that consumes theme tokens
- * 
+ *
  * Follows MRS design system rules:
  * - Uses pill shape (rounded) border radius
  * - Uses theme color tokens
- * 
+ *
  * @example
  * ```tsx
  * <Chip label="Tag" />
@@ -96,4 +96,3 @@ export const Chip: React.FC<ChipProps> = ({
 };
 
 export default Chip;
-

@@ -29,7 +29,7 @@ const preview: Preview = {
   decorators: [
     (Story, context) => {
       const colorScheme = context.globals.backgrounds?.value === '#121212' ? 'dark' : 'light';
-      
+
       return (
         <ThemeProvider colorScheme={colorScheme}>
           <Story />
@@ -40,4 +40,3 @@ const preview: Preview = {
 };
 
 export default preview;
-

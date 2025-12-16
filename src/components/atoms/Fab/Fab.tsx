@@ -1,6 +1,6 @@
 /**
  * Fab (Floating Action Button) Component
- * 
+ *
  * Floating action button component.
  * Uses theme tokens for styling and follows MRS design system rules.
  */
@@ -24,12 +24,20 @@ export interface FabProps extends Omit<MuiFabProps, 'variant' | 'size'> {
    * Fab color
    * @default 'primary'
    */
-  color?: 'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success' | 'inherit' | 'default';
+  color?:
+    | 'primary'
+    | 'secondary'
+    | 'error'
+    | 'warning'
+    | 'info'
+    | 'success'
+    | 'inherit'
+    | 'default';
 }
 
 /**
  * Fab component that consumes theme tokens
- * 
+ *
  * @example
  * ```tsx
  * import { Icon } from '../Icon';
@@ -55,7 +63,9 @@ export const Fab: React.FC<FabProps> = ({
   // Get color palette (handle 'inherit' and 'default' cases)
   const getColorPalette = () => {
     if (color === 'inherit' || color === 'default') return theme.palette.primary;
-    return theme.palette[color as 'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success'];
+    return theme.palette[
+      color as 'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success'
+    ];
   };
 
   const colorPalette = getColorPalette();
@@ -67,14 +77,16 @@ export const Fab: React.FC<FabProps> = ({
       color={color}
       sx={{
         // Use theme shape token for circular shape
-        borderRadius: variant === 'circular' 
-          ? theme.shape.custom?.rounded ?? theme.shape.borderRadius
-          : theme.shape.custom?.md ?? theme.shape.borderRadius,
+        borderRadius:
+          variant === 'circular'
+            ? (theme.shape.custom?.rounded ?? theme.shape.borderRadius)
+            : (theme.shape.custom?.md ?? theme.shape.borderRadius),
         // Use theme state tokens for hover and focus
         '&:focus-visible': {
-          outline: '_states' in colorPalette
-            ? `2px solid ${(colorPalette as any)._states?.focusVisible}`
-            : undefined,
+          outline:
+            '_states' in colorPalette
+              ? `2px solid ${(colorPalette as any)._states?.focusVisible}`
+              : undefined,
           outlineOffset: '2px',
         },
         ...sx,
@@ -85,4 +97,3 @@ export const Fab: React.FC<FabProps> = ({
 };
 
 export default Fab;
-

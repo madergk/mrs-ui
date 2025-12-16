@@ -1,6 +1,6 @@
 /**
  * Theme Provider Component
- * 
+ *
  * Wraps the application with Material-UI ThemeProvider
  * and provides theme context to all child components.
  */
@@ -24,7 +24,7 @@ export interface ThemeProviderProps {
 
 /**
  * ThemeProvider component that wraps the application with Material-UI theme
- * 
+ *
  * @example
  * ```tsx
  * <ThemeProvider colorScheme="light">
@@ -47,4 +47,3 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
 };
 
 export default ThemeProvider;
-

@@ -20,12 +20,35 @@ const meta: Meta<typeof Link> = {
   argTypes: {
     variant: {
       control: 'select',
-      options: ['body1', 'body2', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'subtitle1', 'subtitle2', 'caption', 'overline'],
+      options: [
+        'body1',
+        'body2',
+        'h1',
+        'h2',
+        'h3',
+        'h4',
+        'h5',
+        'h6',
+        'subtitle1',
+        'subtitle2',
+        'caption',
+        'overline',
+      ],
       description: 'Link typography variant',
     },
     color: {
       control: 'select',
-      options: ['primary', 'secondary', 'error', 'warning', 'info', 'success', 'inherit', 'textPrimary', 'textSecondary'],
+      options: [
+        'primary',
+        'secondary',
+        'error',
+        'warning',
+        'info',
+        'success',
+        'inherit',
+        'textPrimary',
+        'textSecondary',
+      ],
       description: 'Link color',
     },
     underline: {
@@ -52,9 +75,15 @@ export const Default: Story = {
 export const UnderlineStyles: Story = {
   render: () => (
     <Stack direction="row" spacing={2}>
-      <Link href="#" underline="none">None</Link>
-      <Link href="#" underline="hover">Hover</Link>
-      <Link href="#" underline="always">Always</Link>
+      <Link href="#" underline="none">
+        None
+      </Link>
+      <Link href="#" underline="hover">
+        Hover
+      </Link>
+      <Link href="#" underline="always">
+        Always
+      </Link>
     </Stack>
   ),
 };
@@ -62,10 +91,18 @@ export const UnderlineStyles: Story = {
 export const Colors: Story = {
   render: () => (
     <Stack direction="row" spacing={2} flexWrap="wrap">
-      <Link href="#" color="primary">Primary</Link>
-      <Link href="#" color="secondary">Secondary</Link>
-      <Link href="#" color="error">Error</Link>
-      <Link href="#" color="inherit">Inherit</Link>
+      <Link href="#" color="primary">
+        Primary
+      </Link>
+      <Link href="#" color="secondary">
+        Secondary
+      </Link>
+      <Link href="#" color="error">
+        Error
+      </Link>
+      <Link href="#" color="inherit">
+        Inherit
+      </Link>
     </Stack>
   ),
 };
@@ -81,12 +118,21 @@ export const InText: Story = {
 export const Variants: Story = {
   render: () => (
     <Stack spacing={2}>
-      <Link href="#" variant="h1">Heading 1 Link</Link>
-      <Link href="#" variant="h2">Heading 2 Link</Link>
-      <Link href="#" variant="body1">Body 1 Link</Link>
-      <Link href="#" variant="body2">Body 2 Link</Link>
-      <Link href="#" variant="caption">Caption Link</Link>
+      <Link href="#" variant="h1">
+        Heading 1 Link
+      </Link>
+      <Link href="#" variant="h2">
+        Heading 2 Link
+      </Link>
+      <Link href="#" variant="body1">
+        Body 1 Link
+      </Link>
+      <Link href="#" variant="body2">
+        Body 2 Link
+      </Link>
+      <Link href="#" variant="caption">
+        Caption Link
+      </Link>
     </Stack>
   ),
 };
-

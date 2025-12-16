@@ -1,6 +1,6 @@
 /**
  * Paper Component
- * 
+ *
  * Surface container component that uses theme paper tokens.
  * Wraps Material-UI Paper with MRS design system styling.
  */
@@ -29,7 +29,7 @@ export interface PaperProps extends MuiPaperProps {
 
 /**
  * Paper component that consumes theme paper tokens
- * 
+ *
  * @example
  * ```tsx
  * <Paper elevation={2}>
@@ -65,4 +65,3 @@ export const Paper: React.FC<PaperProps> = ({
 };
 
 export default Paper;
-

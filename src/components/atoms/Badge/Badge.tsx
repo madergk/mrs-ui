@@ -1,6 +1,6 @@
 /**
  * Badge Component
- * 
+ *
  * Notification indicator component.
  * Typically wraps an Avatar or IconButton to show notifications.
  */
@@ -47,7 +47,7 @@ export interface BadgeProps extends Omit<MuiBadgeProps, 'badgeContent'> {
 
 /**
  * Badge component that consumes theme tokens
- * 
+ *
  * @example
  * ```tsx
  * <Badge badgeContent={4}>
@@ -84,4 +84,3 @@ export const Badge: React.FC<BadgeProps> = ({
 };
 
 export default Badge;
-

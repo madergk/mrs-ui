@@ -20,7 +20,13 @@ export default defineConfig({
       fileName: (format) => `index.js`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom', '@mui/material', '@mui/icons-material', '@mui/x-date-pickers'],
+      external: [
+        'react',
+        'react-dom',
+        '@mui/material',
+        '@mui/icons-material',
+        '@mui/x-date-pickers',
+      ],
       output: {
         globals: {
           react: 'React',
@@ -38,4 +44,3 @@ export default defineConfig({
     },
   },
 });
-

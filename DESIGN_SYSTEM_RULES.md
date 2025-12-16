@@ -43,6 +43,7 @@ Tier 1: Primitives → Tier 2: Semantic → Tier 3: Component
 ```
 
 **Tier 1 - Primitives**: Raw design values without context
+
 - Base colors (hex values)
 - Font sizes (px/rem)
 - Spacing units (px)
@@ -50,6 +51,7 @@ Tier 1: Primitives → Tier 2: Semantic → Tier 3: Component
 - Shadow definitions
 
 **Tier 2 - Semantic**: Contextual tokens with meaning
+
 - Primary/secondary colors
 - Text colors (primary, secondary, disabled)
 - Background colors
@@ -57,6 +59,7 @@ Tier 1: Primitives → Tier 2: Semantic → Tier 3: Component
 - Typography variants (h1-h6, body, caption)
 
 **Tier 3 - Component**: Component-specific overrides
+
 - Button-specific sizes and styles
 - Chip-specific colors
 - Rating-specific fills
@@ -69,6 +72,7 @@ Tier 1: Primitives → Tier 2: Semantic → Tier 3: Component
 ```
 
 Examples:
+
 - `color.primary.main`
 - `typography.h1.fontSize`
 - `spacing.component.button.padding`
@@ -81,6 +85,7 @@ Examples:
 ### Primary Colors
 
 **Brand Color**: Verones (`#00686f`)
+
 ```
 primary.main: #00686f
 primary.dark: #004e53
@@ -89,6 +94,7 @@ primary.contrastText: #ffffff
 ```
 
 **Usage Rules**:
+
 - ✓ Use for primary actions (CTAs, submit buttons)
 - ✓ Use for primary navigation elements
 - ✓ Use for links and interactive elements
@@ -98,6 +104,7 @@ primary.contrastText: #ffffff
 ### Secondary Colors
 
 **Accent Color**: Lime Green (`#99cc00`)
+
 ```
 secondary.main: #99cc00
 secondary.dark: #7aa300
@@ -106,6 +113,7 @@ secondary.contrastText: #000000de
 ```
 
 **Usage Rules**:
+
 - ✓ Use for secondary actions
 - ✓ Use for highlights and accents
 - ✓ Use sparingly to maintain visual hierarchy
@@ -114,6 +122,7 @@ secondary.contrastText: #000000de
 ### Semantic Colors
 
 **Error**: Red
+
 ```
 error.main: #d32f2f
 error.dark: #c62828
@@ -122,6 +131,7 @@ error.contrastText: #ffffff
 ```
 
 **Warning**: Orange
+
 ```
 warning.main: #ed6c02
 warning.dark: #e65100
@@ -130,6 +140,7 @@ warning.contrastText: #ffffff
 ```
 
 **Success**: Green
+
 ```
 success.main: #2e7d32
 success.dark: #1b5e20
@@ -138,6 +149,7 @@ success.contrastText: #ffffff
 ```
 
 **Info**: Blue
+
 ```
 info.main: #0288d1
 info.dark: #01579b
@@ -154,6 +166,7 @@ text.disabled: rgba(0, 0, 0, 0.38)   // 38% opacity
 ```
 
 **Contrast Requirements**:
+
 - Primary text: 4.5:1 minimum contrast ratio (WCAG AA)
 - Large text (18pt+): 3:1 minimum contrast ratio
 - Always verify contrast in Figma before implementation
@@ -180,12 +193,22 @@ background.surface: #f5f5f5
 ### Font Family
 
 **Primary Font**: Nunito
+
 ```css
-font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-             'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+font-family:
+  'Nunito',
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  'Roboto',
+  'Oxygen',
+  'Ubuntu',
+  'Cantarell',
+  sans-serif;
 ```
 
 **Weights Available**:
+
 - Regular: 400
 - Medium: 500
 - SemiBold: 600
@@ -215,20 +238,24 @@ overline: 12px / 0.75rem - Regular (400) - Line height: 2.66
 ### Typography Rules
 
 **Hierarchy**:
+
 - Use only one h1 per page
 - Maintain sequential heading order (h1 → h2 → h3)
 - Do not skip heading levels
 
 **Line Length**:
+
 - Optimal: 50-75 characters per line
 - Maximum: 90 characters per line
 
 **Line Height**:
+
 - Headings: 1.2-1.4x font size
 - Body text: 1.5-1.6x font size
 - Captions: 1.4-1.5x font size
 
 **Letter Spacing**:
+
 - Default: 0 (normal)
 - Overline: 0.05em
 - Button: 0.02em
@@ -256,6 +283,7 @@ overline: 12px / 0.75rem - Regular (400) - Line height: 2.66
 ```
 
 **Usage Guidelines**:
+
 - Use multiples of 8px for all spacing
 - Small gaps: 1-2 units (8-16px)
 - Medium gaps: 3-4 units (24-32px)
@@ -290,6 +318,7 @@ rounded: 9999px (pill shape)
 ```
 
 **Component Rules**:
+
 - Buttons: `rounded` (pill shape)
 - Cards: `md` (12px)
 - Inputs: `sm` (8px)
@@ -303,11 +332,13 @@ rounded: 9999px (pill shape)
 ### Buttons
 
 **Variants**:
+
 - Contained: High emphasis, primary actions
 - Outlined: Medium emphasis, secondary actions
 - Text: Low emphasis, tertiary actions
 
 **Sizes**:
+
 ```
 Small:  padding: 4px 10px,  fontSize: 13px, minHeight: 32px
 Medium: padding: 6px 16px,  fontSize: 14px, minHeight: 36px
@@ -315,6 +346,7 @@ Large:  padding: 8px 22px,  fontSize: 16px, minHeight: 42px
 ```
 
 **States**:
+
 - Default
 - Hover: opacity 0.9
 - Active: opacity 0.8
@@ -322,6 +354,7 @@ Large:  padding: 8px 22px,  fontSize: 16px, minHeight: 42px
 - Focus: 2px outline with primary color
 
 **Rules**:
+
 - ✓ Use sentence case for button labels
 - ✓ Keep labels short (1-3 words)
 - ✓ Use action verbs (Submit, Cancel, Save)
@@ -331,6 +364,7 @@ Large:  padding: 8px 22px,  fontSize: 16px, minHeight: 42px
 ### Cards
 
 **Elevation**:
+
 - Default: 1 (subtle shadow)
 - Hover: 4 (raised shadow)
 
@@ -338,6 +372,7 @@ Large:  padding: 8px 22px,  fontSize: 16px, minHeight: 42px
 **Border Radius**: 12px (md)
 
 **Structure**:
+
 1. CardHeader (optional): Title, subtitle, action
 2. CardMedia (optional): Image or video
 3. CardContent: Main content
@@ -346,6 +381,7 @@ Large:  padding: 8px 22px,  fontSize: 16px, minHeight: 42px
 ### Form Inputs
 
 **Height**:
+
 ```
 Small: 32px
 Medium: 40px
@@ -353,12 +389,14 @@ Large: 48px
 ```
 
 **States**:
+
 - Default: neutral border
 - Focus: primary color border (2px)
 - Error: error color border (2px)
 - Disabled: reduced opacity (0.38)
 
 **Rules**:
+
 - ✓ Always include labels
 - ✓ Use helper text for guidance
 - ✓ Show error messages inline
@@ -368,6 +406,7 @@ Large: 48px
 ### Icons
 
 **Sizes**:
+
 ```
 Small: 16px
 Medium: 24px
@@ -375,6 +414,7 @@ Large: 32px
 ```
 
 **Rules**:
+
 - Use Material Icons library
 - Maintain 1:1 aspect ratio
 - Provide accessible labels for icon-only buttons
@@ -386,26 +426,31 @@ Large: 32px
 ### WCAG 2.1 Level AA Compliance
 
 **Color Contrast**:
+
 - Normal text: 4.5:1 minimum
 - Large text (18pt+): 3:1 minimum
 - UI components: 3:1 minimum
 
 **Keyboard Navigation**:
+
 - All interactive elements must be keyboard accessible
 - Tab order must be logical
 - Focus indicators must be visible (2px outline)
 
 **Screen Reader Support**:
+
 - Use semantic HTML elements
 - Provide ARIA labels where needed
 - Use alt text for images
 - Use aria-describedby for form errors
 
 **Touch Targets**:
+
 - Minimum size: 44x44px (mobile)
 - Minimum spacing: 8px between targets
 
 **Focus Management**:
+
 - Visible focus indicators (2px outline)
 - Logical focus order (top to bottom, left to right)
 - Focus trap for modals and dialogs
@@ -430,24 +475,32 @@ xl: 1200px+      // Large desktop
 **Progressive Enhancement**: Add complexity for larger screens
 
 **Example**:
+
 ```css
 /* Mobile first (xs) */
-.container { padding: 16px; }
+.container {
+  padding: 16px;
+}
 
 /* Tablet (md) */
 @media (min-width: 600px) {
-  .container { padding: 24px; }
+  .container {
+    padding: 24px;
+  }
 }
 
 /* Desktop (lg) */
 @media (min-width: 900px) {
-  .container { padding: 32px; }
+  .container {
+    padding: 32px;
+  }
 }
 ```
 
 ### Responsive Typography
 
 **Fluid Typography**: Use `clamp()` for scalable text
+
 ```css
 font-size: clamp(16px, 2vw, 24px);
 ```
@@ -486,19 +539,23 @@ sharp:     cubic-bezier(0.4, 0, 0.6, 1)
 ### Animation Guidelines
 
 **Micro-interactions**:
+
 - Use for button hovers, toggles, state changes
 - Duration: 150-250ms
 - Easing: easeInOut
 
 **Page Transitions**:
+
 - Duration: 300-375ms
 - Easing: easeOut (entering), easeIn (leaving)
 
 **Disabled Animations**:
+
 - Respect `prefers-reduced-motion` media query
 - Provide instant state changes for accessibility
 
 **Rules**:
+
 - ✓ Keep animations subtle and purposeful
 - ✓ Use consistent timing across similar interactions
 - ✓ Provide immediate feedback for user actions
@@ -538,6 +595,7 @@ sharp:     cubic-bezier(0.4, 0, 0.6, 1)
 To enable automated token extraction:
 
 **1. Install Figma MCP Server**:
+
 ```json
 // ~/Library/Application Support/Claude/claude_desktop_config.json
 {
@@ -554,11 +612,13 @@ To enable automated token extraction:
 ```
 
 **2. Generate Figma Access Token**:
+
 - Go to Figma → Settings → Personal Access Tokens
 - Create new token with "File content" read permission
 - Add token to MCP config
 
 **3. Benefits**:
+
 - Automated token extraction
 - Real-time design-code sync
 - Validation of Figma-code alignment
@@ -572,6 +632,7 @@ When Figma design is updated:
    - Note which tokens/components were modified
 
 2. **Create Feature Branch**:
+
    ```bash
    git checkout -b design/update-colors-2025-12
    ```
@@ -587,6 +648,7 @@ When Figma design is updated:
    - Update tests
 
 5. **Quality Checks**:
+
    ```bash
    npm run lint
    npm run type-check
@@ -607,12 +669,14 @@ When Figma design is updated:
 ### Single Source of Truth
 
 **Figma** is the source of truth for:
+
 - Visual design
 - Component specifications
 - Design token values
 - Spacing and layout rules
 
 **Code** is the source of truth for:
+
 - Implementation details
 - Accessibility enhancements
 - TypeScript types
@@ -650,18 +714,21 @@ Before merging design changes:
 ## Resources
 
 ### Tools
+
 - **Figma**: Design and prototyping
 - **Contrast Checker**: WebAIM Contrast Checker
 - **Typography Calculator**: Type Scale Generator
 - **Accessibility**: axe DevTools, WAVE
 
 ### Documentation
+
 - [Material UI Theme Documentation](https://mui.com/material-ui/customization/theming/)
 - [W3C Design Tokens Spec](https://design-tokens.github.io/community-group/)
 - [WCAG 2.1 Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 - [Material Design Guidelines](https://m3.material.io/)
 
 ### Internal Links
+
 - Project README: `/README.md`
 - Architecture: `/src/theme/ARCHITECTURE.md`
 - Token Structure: `/design-tokens-structure.md`

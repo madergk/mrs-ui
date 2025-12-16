@@ -36,4 +36,3 @@ describe('Divider', () => {
     expect(screen.getByTestId('divider-test')).toBeInTheDocument();
   });
 });
-

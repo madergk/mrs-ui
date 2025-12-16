@@ -16,16 +16,19 @@ Successfully migrated all components from `@mui/icons-material` (SVG icons) to *
 ### 2. Icon Component Updates
 
 **New Components Created**:
+
 - `MaterialSymbol.tsx` - Base component for Material Symbols font icons
 - Updated `Icon.tsx` - Now uses Material Symbols by default
 
 **Font Variation Settings** (matching design requirements):
+
 - **FILL**: 0 (outlined by default)
 - **wght**: 300 (Light weight)
 - **GRAD**: 0
 - **opsz**: 24 (matches Nunito 400 typography optical size)
 
 **Size Mapping** (from Figma design):
+
 - Small: 20px
 - Medium: 24px (default)
 - Large: 35px
@@ -45,6 +48,7 @@ All components now use Material Symbols instead of SVG icons:
 ### 4. Test Updates
 
 All test files updated to:
+
 - Use `ThemeProvider` wrapper
 - Use `Icon` component with Material Symbols
 - Test Material Symbols font rendering instead of SVG
@@ -85,6 +89,7 @@ import { IconButton, Icon } from '@mrs/ui';
 ## Icon Name Format
 
 Material Symbols uses **snake_case** for icon names:
+
 - `home` (not `Home`)
 - `settings` (not `Settings`)
 - `favorite` (not `Favorite`)
@@ -106,6 +111,7 @@ The Material Symbols font is configured with:
 ```
 
 This matches:
+
 - **Typography**: Nunito 400 optical size
 - **Weight**: 300 (Light)
 - **Style**: Rounded family
@@ -137,4 +143,3 @@ This matches:
 **Date**: December 2025  
 **Status**: ✅ Complete  
 **Components Updated**: 6 (Icon, IconButton, Fab, Avatar, Badge, Chip)
-

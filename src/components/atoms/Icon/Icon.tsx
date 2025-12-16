@@ -1,10 +1,10 @@
 /**
  * Icon Component
- * 
+ *
  * Icon component using Material Symbols font.
  * Supports both font icons and custom icon instances.
  * Uses Material Symbols Rounded family with proper font-variation-settings.
- * 
+ *
  * Reference: https://developers.google.com/fonts/docs/material_symbols
  */
 
@@ -44,14 +44,14 @@ const SIZE_MAP = {
 
 /**
  * Icon component that uses Material Symbols font icons
- * 
+ *
  * Follows MRS design system rules:
  * - Uses Material Symbols Rounded family
  * - Weight: 300 (Light)
  * - Optical size: 24 (matches Nunito 400 typography)
  * - Fill: 0 (outlined by default)
  * - Grade: 0
- * 
+ *
  * @example
  * ```tsx
  * <Icon icon="home" size="medium" />
@@ -86,7 +86,8 @@ export const Icon: React.FC<IconProps> = ({
 
   // Calculate optical size based on icon size to match typography
   // Medium (24px) matches Nunito 400 typography optical size
-  const calculatedOpticalSize = size === 'medium' ? 24 : size === 'large' ? 35 : size === 'small' ? 20 : 16;
+  const calculatedOpticalSize =
+    size === 'medium' ? 24 : size === 'large' ? 35 : size === 'small' ? 20 : 16;
 
   return (
     <MaterialSymbol
@@ -104,4 +105,3 @@ export const Icon: React.FC<IconProps> = ({
 };
 
 export default Icon;
-

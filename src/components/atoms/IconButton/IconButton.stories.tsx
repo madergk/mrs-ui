@@ -26,7 +26,16 @@ const meta: Meta<typeof IconButton> = {
     },
     color: {
       control: 'select',
-      options: ['primary', 'secondary', 'error', 'warning', 'info', 'success', 'inherit', 'default'],
+      options: [
+        'primary',
+        'secondary',
+        'error',
+        'warning',
+        'info',
+        'success',
+        'inherit',
+        'default',
+      ],
       description: 'Icon button color',
     },
     disabled: {
@@ -139,4 +148,3 @@ export const WithEdge: Story = {
     </Stack>
   ),
 };
-

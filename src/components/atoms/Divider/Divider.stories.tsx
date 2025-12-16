@@ -13,7 +13,8 @@ const meta: Meta<typeof Divider> = {
   parameters: {
     docs: {
       description: {
-        component: 'Divider component that uses theme divider tokens. Used to separate content sections.',
+        component:
+          'Divider component that uses theme divider tokens. Used to separate content sections.',
       },
     },
   },
@@ -83,14 +84,21 @@ export const Variants: Story = {
 export const InList: Story = {
   render: () => (
     <Box sx={{ width: '100%', maxWidth: 360 }}>
-      <Typography variant="h6" sx={{ p: 2 }}>List Items</Typography>
+      <Typography variant="h6" sx={{ p: 2 }}>
+        List Items
+      </Typography>
       <Divider />
-      <Typography variant="body1" sx={{ p: 2 }}>Item 1</Typography>
+      <Typography variant="body1" sx={{ p: 2 }}>
+        Item 1
+      </Typography>
       <Divider />
-      <Typography variant="body1" sx={{ p: 2 }}>Item 2</Typography>
+      <Typography variant="body1" sx={{ p: 2 }}>
+        Item 2
+      </Typography>
       <Divider />
-      <Typography variant="body1" sx={{ p: 2 }}>Item 3</Typography>
+      <Typography variant="body1" sx={{ p: 2 }}>
+        Item 3
+      </Typography>
     </Box>
   ),
 };
-

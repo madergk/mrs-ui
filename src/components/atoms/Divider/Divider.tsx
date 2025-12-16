@@ -1,6 +1,6 @@
 /**
  * Divider Component
- * 
+ *
  * Separator component that uses theme divider tokens.
  * Wraps Material-UI Divider with MRS design system styling.
  */
@@ -27,7 +27,7 @@ export interface DividerProps extends MuiDividerProps {
 
 /**
  * Divider component that consumes theme divider tokens
- * 
+ *
  * @example
  * ```tsx
  * <Divider />
@@ -41,15 +41,7 @@ export const Divider: React.FC<DividerProps> = ({
   flexItem,
   ...props
 }) => {
-  return (
-    <MuiDivider
-      orientation={orientation}
-      variant={variant}
-      flexItem={flexItem}
-      {...props}
-    />
-  );
+  return <MuiDivider orientation={orientation} variant={variant} flexItem={flexItem} {...props} />;
 };
 
 export default Divider;
-

@@ -107,11 +107,5 @@ export const Variants: Story = {
 };
 
 export const WithImage: Story = {
-  render: () => (
-    <Avatar
-      src="https://mui.com/static/images/avatar/1.jpg"
-      alt="User avatar"
-    />
-  ),
+  render: () => <Avatar src="https://mui.com/static/images/avatar/1.jpg" alt="User avatar" />,
 };
-

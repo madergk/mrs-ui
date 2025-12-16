@@ -11,96 +11,96 @@
 
 ### 🎨 Color Variables
 
-| Figma Variable | Value | Status in theme.json |
-|----------------|-------|---------------------|
-| `primary/main` | `#00686f` | ✅ Matches `palette.primary.main` |
-| `primary/dark` | `#004e53` | ✅ Matches `palette.primary.dark` |
-| `primary/contrastText` | `#ffffff` | ✅ Matches `palette.primary.contrastText` |
-| `primary/_states/outlinedBorder` | `#00999980` (rgba(0, 153, 153, 0.5)) | ✅ Matches `palette.primary._states.outlinedBorder` |
-| `text/primary` | `#000000c7` (rgba(0, 0, 0, 0.78)) | ✅ Matches `palette.text.primary` |
-| `text/secondary` | `#00000099` (rgba(0, 0, 0, 0.6)) | ⚠️ Check: theme has `rgba(0, 0, 0, 0.78)` for primary |
-| `text/disabled` | `#00000061` (rgba(0, 0, 0, 0.38)) | ✅ Matches `palette.text.disabled` |
-| `action/active` | `#0000008a` (rgba(0, 0, 0, 0.54)) | ✅ Matches `palette.action.active` |
-| `action/selected` | `#00000014` (rgba(0, 0, 0, 0.08)) | ✅ **ADDED** - Now in `palette.action.selected` |
-| `action/disabled` | `#00000042` (rgba(0, 0, 0, 0.26)) | ✅ Matches `palette.action.disabled` |
-| `action/disabledBackground` | `#0000001f` (rgba(0, 0, 0, 0.12)) | ✅ Matches `palette.action.disabledBackground` |
-| `action/hover` | `#0000000a` (rgba(0, 0, 0, 0.04)) | ✅ Matches `palette.action.hover` |
-| `background/default` | `#ffffff` | ✅ Matches `palette.background.paper` |
-| `divider` | `#0000001f` (rgba(0, 0, 0, 0.12)) | ✅ **ADDED** - Now in `palette.divider` |
-| `icon/primary` | `#00000099` (rgba(0, 0, 0, 0.6)) | ✅ Matches `palette.icon.primary` |
-| `grey/300` | `#e0e0e0` | ✅ **ADDED** - Now in `palette.common.grey.300` |
+| Figma Variable                   | Value                                | Status in theme.json                                  |
+| -------------------------------- | ------------------------------------ | ----------------------------------------------------- |
+| `primary/main`                   | `#00686f`                            | ✅ Matches `palette.primary.main`                     |
+| `primary/dark`                   | `#004e53`                            | ✅ Matches `palette.primary.dark`                     |
+| `primary/contrastText`           | `#ffffff`                            | ✅ Matches `palette.primary.contrastText`             |
+| `primary/_states/outlinedBorder` | `#00999980` (rgba(0, 153, 153, 0.5)) | ✅ Matches `palette.primary._states.outlinedBorder`   |
+| `text/primary`                   | `#000000c7` (rgba(0, 0, 0, 0.78))    | ✅ Matches `palette.text.primary`                     |
+| `text/secondary`                 | `#00000099` (rgba(0, 0, 0, 0.6))     | ⚠️ Check: theme has `rgba(0, 0, 0, 0.78)` for primary |
+| `text/disabled`                  | `#00000061` (rgba(0, 0, 0, 0.38))    | ✅ Matches `palette.text.disabled`                    |
+| `action/active`                  | `#0000008a` (rgba(0, 0, 0, 0.54))    | ✅ Matches `palette.action.active`                    |
+| `action/selected`                | `#00000014` (rgba(0, 0, 0, 0.08))    | ✅ **ADDED** - Now in `palette.action.selected`       |
+| `action/disabled`                | `#00000042` (rgba(0, 0, 0, 0.26))    | ✅ Matches `palette.action.disabled`                  |
+| `action/disabledBackground`      | `#0000001f` (rgba(0, 0, 0, 0.12))    | ✅ Matches `palette.action.disabledBackground`        |
+| `action/hover`                   | `#0000000a` (rgba(0, 0, 0, 0.04))    | ✅ Matches `palette.action.hover`                     |
+| `background/default`             | `#ffffff`                            | ✅ Matches `palette.background.paper`                 |
+| `divider`                        | `#0000001f` (rgba(0, 0, 0, 0.12))    | ✅ **ADDED** - Now in `palette.divider`               |
+| `icon/primary`                   | `#00000099` (rgba(0, 0, 0, 0.6))     | ✅ Matches `palette.icon.primary`                     |
+| `grey/300`                       | `#e0e0e0`                            | ✅ **ADDED** - Now in `palette.common.grey.300`       |
 
 ### 📝 Typography Variables
 
-| Figma Variable | Value | Status in theme.json |
-|----------------|-------|---------------------|
-| `fontFamily` | `Nunito` | ✅ Matches `typography.*.fontFamily` |
-| `iconFontFamily` | `Material Symbols Rounded` | ✅ **ADDED** - Now in `typography.icon.fontFamily` |
-| `fontWeightRegular` | `400` | ✅ Used throughout theme.json |
-| `fontWeightMedium` | `500` | ✅ Used in button components |
-| `_fontSize/0,75rem` | `12` (0.75rem) | ✅ **ADDED** - Now in `typography.fontSize["0.75rem"]` |
-| `_fontSize/0,8125rem` | `13` (0.8125rem) | ✅ **ADDED** - Now in `typography.fontSize["0.8125rem"]` |
-| `_fontSize/0,875rem` | `14` (0.875rem) | ✅ **ADDED** - Now in `typography.fontSize["0.875rem"]` |
-| `_fontSize/1rem` | `16` (1rem) | ✅ **ADDED** - Now in `typography.fontSize["1rem"]` |
-| `typography/body1` | Font definition | ✅ Exists in `typography.body1` |
-| `typography/body2` | Font definition | ✅ Exists in `typography.body2` |
+| Figma Variable        | Value                      | Status in theme.json                                     |
+| --------------------- | -------------------------- | -------------------------------------------------------- |
+| `fontFamily`          | `Nunito`                   | ✅ Matches `typography.*.fontFamily`                     |
+| `iconFontFamily`      | `Material Symbols Rounded` | ✅ **ADDED** - Now in `typography.icon.fontFamily`       |
+| `fontWeightRegular`   | `400`                      | ✅ Used throughout theme.json                            |
+| `fontWeightMedium`    | `500`                      | ✅ Used in button components                             |
+| `_fontSize/0,75rem`   | `12` (0.75rem)             | ✅ **ADDED** - Now in `typography.fontSize["0.75rem"]`   |
+| `_fontSize/0,8125rem` | `13` (0.8125rem)           | ✅ **ADDED** - Now in `typography.fontSize["0.8125rem"]` |
+| `_fontSize/0,875rem`  | `14` (0.875rem)            | ✅ **ADDED** - Now in `typography.fontSize["0.875rem"]`  |
+| `_fontSize/1rem`      | `16` (1rem)                | ✅ **ADDED** - Now in `typography.fontSize["1rem"]`      |
+| `typography/body1`    | Font definition            | ✅ Exists in `typography.body1`                          |
+| `typography/body2`    | Font definition            | ✅ Exists in `typography.body2`                          |
 
 ### 🎯 Component-Specific Typography
 
-| Figma Variable | Font Definition | Status |
-|----------------|-----------------|--------|
-| `input/label` | Font(family: "fontFamily", size: 0.75rem, weight: 400, lineHeight: 12, letterSpacing: 0.15) | ✅ **ADDED** - Now in `typography.input.label` |
-| `input/value` | Font(family: "fontFamily", size: 1rem, weight: 400, lineHeight: 24, letterSpacing: 0.15) | ✅ **ADDED** - Now in `typography.input.value` |
-| `button/medium` | Font(family: "fontFamily", size: 0.875rem, weight: 500, lineHeight: 24, letterSpacing: 0.4) | ✅ Exists in `components.MuiButton` |
-| `button/small` | Font(family: "fontFamily", size: 0.8125rem, weight: 500, lineHeight: 22, letterSpacing: 0.46) | ✅ Exists in `components.MuiButton` |
-| `chip/label` | Font(family: "fontFamily", size: 0.8125rem, weight: 400, lineHeight: 18, letterSpacing: 0.16) | ✅ **ADDED** - Now in `typography.chip.label` |
-| `menu/itemDefault` | Font(family: "fontFamily", size: 1rem, weight: 400, lineHeight: 1.5, letterSpacing: 0.15) | ✅ **ADDED** - Now in `typography.menu.itemDefault` |
+| Figma Variable     | Font Definition                                                                               | Status                                              |
+| ------------------ | --------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| `input/label`      | Font(family: "fontFamily", size: 0.75rem, weight: 400, lineHeight: 12, letterSpacing: 0.15)   | ✅ **ADDED** - Now in `typography.input.label`      |
+| `input/value`      | Font(family: "fontFamily", size: 1rem, weight: 400, lineHeight: 24, letterSpacing: 0.15)      | ✅ **ADDED** - Now in `typography.input.value`      |
+| `button/medium`    | Font(family: "fontFamily", size: 0.875rem, weight: 500, lineHeight: 24, letterSpacing: 0.4)   | ✅ Exists in `components.MuiButton`                 |
+| `button/small`     | Font(family: "fontFamily", size: 0.8125rem, weight: 500, lineHeight: 22, letterSpacing: 0.46) | ✅ Exists in `components.MuiButton`                 |
+| `chip/label`       | Font(family: "fontFamily", size: 0.8125rem, weight: 400, lineHeight: 18, letterSpacing: 0.16) | ✅ **ADDED** - Now in `typography.chip.label`       |
+| `menu/itemDefault` | Font(family: "fontFamily", size: 1rem, weight: 400, lineHeight: 1.5, letterSpacing: 0.15)     | ✅ **ADDED** - Now in `typography.menu.itemDefault` |
 
 ### 🎨 Icon Typography
 
-| Figma Variable | Font Definition | Status |
-|----------------|-----------------|--------|
+| Figma Variable          | Font Definition                                                        | Status                             |
+| ----------------------- | ---------------------------------------------------------------------- | ---------------------------------- |
 | `icon/outlined/inherit` | Font(family: "iconFontFamily", size: 16, weight: 400, lineHeight: 100) | ⚠️ **MISSING** - Not in theme.json |
-| `icon/outlined/small` | Font(family: "iconFontFamily", size: 20, weight: 300, lineHeight: 100) | ⚠️ **MISSING** - Not in theme.json |
-| `icon/outlined/medium` | Font(family: "iconFontFamily", size: 24, weight: 300, lineHeight: 24) | ⚠️ **MISSING** - Not in theme.json |
+| `icon/outlined/small`   | Font(family: "iconFontFamily", size: 20, weight: 300, lineHeight: 100) | ⚠️ **MISSING** - Not in theme.json |
+| `icon/outlined/medium`  | Font(family: "iconFontFamily", size: 24, weight: 300, lineHeight: 24)  | ⚠️ **MISSING** - Not in theme.json |
 
 ### 🧩 Component-Specific Colors
 
-| Figma Variable | Value | Status |
-|----------------|-------|--------|
+| Figma Variable                             | Value                             | Status                                                                   |
+| ------------------------------------------ | --------------------------------- | ------------------------------------------------------------------------ |
 | `_components/input/standard/enabledBorder` | `#0000006b` (rgba(0, 0, 0, 0.42)) | ✅ **ADDED** - Now in `palette._components.input.standard.enabledBorder` |
-| `_components/input/filled/enabledFill` | `#0000000f` (rgba(0, 0, 0, 0.06)) | ✅ **ADDED** - Now in `palette._components.input.filled.enabledFill` |
+| `_components/input/filled/enabledFill`     | `#0000000f` (rgba(0, 0, 0, 0.06)) | ✅ **ADDED** - Now in `palette._components.input.filled.enabledFill`     |
 | `_components/input/outlined/enabledBorder` | `#0000003b` (rgba(0, 0, 0, 0.23)) | ✅ **ADDED** - Now in `palette._components.input.outlined.enabledBorder` |
-| `_components/paper/elevation-0` | `#ffffff` | ✅ Matches `palette._components.paper.elevation-0` |
-| `_components/paper/elevation-8` | `#ffffff` | ✅ Matches `palette._components.paper.elevation-8` |
-| `_components/rating/activeFill` | `#ffb400` | ✅ **ADDED** - Now in `palette._components.rating.activeFill` |
-| `_components/rating/enabledBorder` | `#0000003b` (rgba(0, 0, 0, 0.23)) | ✅ **ADDED** - Now in `palette._components.rating.enabledBorder` |
-| `_components/switch/knobFillEnabled` | `#fafafa` | ✅ Matches `palette._components.switch.knobFillEnabled` |
-| `_components/switch/slideFill` | `#000000` | ✅ Matches `palette._components.switch.slideFill` |
+| `_components/paper/elevation-0`            | `#ffffff`                         | ✅ Matches `palette._components.paper.elevation-0`                       |
+| `_components/paper/elevation-8`            | `#ffffff`                         | ✅ Matches `palette._components.paper.elevation-8`                       |
+| `_components/rating/activeFill`            | `#ffb400`                         | ✅ **ADDED** - Now in `palette._components.rating.activeFill`            |
+| `_components/rating/enabledBorder`         | `#0000003b` (rgba(0, 0, 0, 0.23)) | ✅ **ADDED** - Now in `palette._components.rating.enabledBorder`         |
+| `_components/switch/knobFillEnabled`       | `#fafafa`                         | ✅ Matches `palette._components.switch.knobFillEnabled`                  |
+| `_components/switch/slideFill`             | `#000000`                         | ✅ Matches `palette._components.switch.slideFill`                        |
 
 ### 📐 Spacing & Shape Variables
 
-| Figma Variable | Value | Status |
-|----------------|-------|--------|
-| `2` | `16` (16px) | ✅ Matches `spacing[4]` (index 4 = 16px) |
-| `md` | `8` (8px) | ✅ Matches `shape.md` |
-| `none` | `0` | ✅ Used in theme.json |
-| `1,5` | `12` (12px) | ✅ Matches `spacing[3]` (index 3 = 12px) |
-| `rounded` | `9999` | ✅ Matches `shape.rounded` |
+| Figma Variable | Value       | Status                                   |
+| -------------- | ----------- | ---------------------------------------- |
+| `2`            | `16` (16px) | ✅ Matches `spacing[4]` (index 4 = 16px) |
+| `md`           | `8` (8px)   | ✅ Matches `shape.md`                    |
+| `none`         | `0`         | ✅ Used in theme.json                    |
+| `1,5`          | `12` (12px) | ✅ Matches `spacing[3]` (index 3 = 12px) |
+| `rounded`      | `9999`      | ✅ Matches `shape.rounded`               |
 
 ### 🌫️ Elevation/Shadow Variables
 
-| Figma Variable | Effect Definition | Status |
-|----------------|-------------------|--------|
-| `elevation/1` | DROP_SHADOW (3 effects) | ✅ **ADDED** - Now in `palette._components.elevation["1"]` (boxShadow) |
-| `elevation/2` | DROP_SHADOW (3 effects) | ✅ **ADDED** - Now in `palette._components.elevation["2"]` (boxShadow) |
-| `elevation/6` | DROP_SHADOW (3 effects) | ✅ **ADDED** - Now in `palette._components.elevation["6"]` (boxShadow) |
-| `elevation/8` | DROP_SHADOW (3 effects) | ✅ **ADDED** - Now in `palette._components.elevation["8"]` (boxShadow) |
+| Figma Variable | Effect Definition       | Status                                                                 |
+| -------------- | ----------------------- | ---------------------------------------------------------------------- |
+| `elevation/1`  | DROP_SHADOW (3 effects) | ✅ **ADDED** - Now in `palette._components.elevation["1"]` (boxShadow) |
+| `elevation/2`  | DROP_SHADOW (3 effects) | ✅ **ADDED** - Now in `palette._components.elevation["2"]` (boxShadow) |
+| `elevation/6`  | DROP_SHADOW (3 effects) | ✅ **ADDED** - Now in `palette._components.elevation["6"]` (boxShadow) |
+| `elevation/8`  | DROP_SHADOW (3 effects) | ✅ **ADDED** - Now in `palette._components.elevation["8"]` (boxShadow) |
 
 ### 🎯 Special Variables
 
-| Figma Variable | Value | Status |
-|----------------|-------|--------|
+| Figma Variable            | Value     | Status                             |
+| ------------------------- | --------- | ---------------------------------- |
 | `*library/clickableLayer` | `#000000` | ⚠️ **MISSING** - Not in theme.json |
 
 ---
@@ -108,6 +108,7 @@
 ## 🔍 KEY FINDINGS
 
 ### ✅ Variables That Match
+
 - Primary color palette (main, dark, contrastText)
 - Basic text colors (primary, disabled)
 - Action colors (active, disabled, hover)
@@ -120,6 +121,7 @@
 ### ⚠️ Missing Variables in theme.json
 
 #### High Priority (Component Functionality)
+
 1. **Input Component Tokens**:
    - `_components.input.standard.enabledBorder`
    - `_components.input.filled.enabledFill`
@@ -137,6 +139,7 @@
    - Icon typography tokens (inherit, small, medium)
 
 #### Medium Priority (Component Styling)
+
 5. **Component Typography**:
    - `chip/label` typography
    - `menu/itemDefault` typography
@@ -150,6 +153,7 @@
    - Elevation shadow definitions (elevation/1, elevation/2, elevation/6, elevation/8)
 
 #### Low Priority (Utility)
+
 8. **Font Size Tokens**:
    - Explicit fontSize tokens (0.75rem, 0.8125rem, 0.875rem, 1rem)
 
@@ -307,4 +311,3 @@ Material-UI handles elevation via `boxShadow`, but you may want to document the 
 **Generated**: December 2025  
 **Tool**: Figma MCP Integration  
 **Last Updated**: December 2025 (High priority tokens added)
-

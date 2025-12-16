@@ -71,7 +71,7 @@ describe('Fab', () => {
         <Icon icon="add" />
       </Fab>
     );
-    
+
     const button = container.querySelector('button');
     if (button) {
       await userEvent.click(button);
@@ -89,4 +89,3 @@ describe('Fab', () => {
     expect(button).toBeDisabled();
   });
 });
-

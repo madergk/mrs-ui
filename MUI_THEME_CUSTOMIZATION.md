@@ -22,6 +22,7 @@ typography: {
 **Reference**: [MUI Typography Documentation](https://mui.com/material-ui/customization/typography/)
 
 **Key Features**:
+
 - All typography variants use Nunito font family
 - Base font size: 14px
 - HTML font size: 16px (for rem calculations)
@@ -29,6 +30,7 @@ typography: {
 - Custom variants can be added
 
 **Usage**:
+
 ```tsx
 <Typography variant="h1">Heading 1</Typography>
 <Typography variant="body1">Body text</Typography>
@@ -41,12 +43,13 @@ typography: {
 **Format**: Array-based spacing with function conversion
 
 ```typescript
-spacing: [0, 4, 8, 12, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96]
+spacing: [0, 4, 8, 12, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96];
 ```
 
 **Reference**: [MUI Spacing Documentation](https://mui.com/material-ui/customization/spacing/)
 
 **Key Features**:
+
 - 4px-based spacing scale (MRS Design System)
 - Array-based with automatic function conversion
 - Supports negative values
@@ -54,6 +57,7 @@ spacing: [0, 4, 8, 12, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96]
 - Multiple arity support (up to 4 arguments)
 
 **Usage**:
+
 ```tsx
 // Single value
 sx={{ padding: theme.spacing(2) }} // 8px
@@ -66,6 +70,7 @@ sx={{ margin: theme.spacing(1, 'auto') }} // 4px auto
 ```
 
 **Spacing Scale**:
+
 - `spacing(0)` = 0px
 - `spacing(1)` = 4px
 - `spacing(2)` = 8px
@@ -96,12 +101,14 @@ shape: {
 **Reference**: [MUI Shape Documentation](https://mui.com/material-ui/customization/shape/)
 
 **Key Features**:
+
 - Default border radius: 4px
 - Custom shape values accessible via `theme.shape.custom.*`
 - Supports all MUI component border radius usage
 - Pill shape (9999px) for rounded components
 
 **Usage**:
+
 ```tsx
 // Default border radius
 sx={{ borderRadius: theme.shape.borderRadius }} // 4px
@@ -134,12 +141,14 @@ breakpoints: {
 **Reference**: [MUI Breakpoints Documentation](https://mui.com/material-ui/customization/breakpoints/)
 
 **Key Features**:
+
 - Standard MUI breakpoint values
 - Responsive design support
 - Media query helpers
 - Container query support (MUI v7)
 
 **Usage**:
+
 ```tsx
 // Responsive values
 sx={{
@@ -179,12 +188,14 @@ zIndex: {
 **Reference**: [MUI z-index Documentation](https://mui.com/material-ui/customization/z-index/)
 
 **Key Features**:
+
 - Standard MUI z-index values
 - Ensures proper component layering
 - Prevents z-index conflicts
 - Customizable per component
 
 **Usage**:
+
 ```tsx
 // Components automatically use correct z-index
 <AppBar /> // z-index: 1100
@@ -222,12 +233,14 @@ transitions: {
 **Reference**: [MUI Transitions Documentation](https://mui.com/material-ui/customization/transitions/)
 
 **Key Features**:
+
 - Standard MUI transition durations
 - Material Design easing curves
 - Consistent animation timing
 - Customizable per component
 
 **Usage**:
+
 ```tsx
 // Using transition helpers
 sx={{
@@ -258,12 +271,14 @@ containerQueries: {
 **Reference**: [MUI Container Queries Documentation](https://mui.com/material-ui/customization/container-queries/)
 
 **Key Features**:
+
 - Container-based responsive design
 - More precise control than viewport breakpoints
 - Better component encapsulation
 - MUI v7 feature
 
 **Usage**:
+
 ```tsx
 <Box sx={{ containerType: 'inline-size' }}>
   <Typography
@@ -294,12 +309,14 @@ density: {
 **Reference**: [MUI Density Documentation](https://mui.com/material-ui/customization/density/)
 
 **Key Features**:
+
 - Controls component spacing and size
 - Three levels: compact, comfortable, spacious
 - Applied via component defaultProps
 - Better for data-dense interfaces
 
 **Usage**:
+
 ```tsx
 // Set density via component props
 <Button size="small" /> // Compact
@@ -321,6 +338,7 @@ components: {
 ## Preserved MRS Design System Values
 
 ### Palette (Verones)
+
 - **Primary**: `#00686F` (Teal)
 - **Secondary**: `#99CC00` (Lime Green)
 - **Error**: `#AB1A1A` (Red)
@@ -329,15 +347,18 @@ components: {
 - **Success**: `#036642` (Green)
 
 ### Typography (Nunito)
+
 - **Font Family**: `Nunito, Helvetica, Arial, sans-serif`
 - **Base Size**: 14px
 - **HTML Font Size**: 16px
 
 ### Spacing
+
 - **Base Unit**: 4px
 - **Scale**: `[0, 4, 8, 12, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96]`
 
 ### Shape
+
 - **Default**: 4px
 - **Small**: 4px
 - **Medium**: 8px
@@ -437,7 +458,7 @@ import { useTheme } from '@mui/material/styles';
 
 function MyComponent() {
   const theme = useTheme();
-  
+
   // Typed access to all theme properties
   const spacing = theme.spacing(2);
   const borderRadius = theme.shape.borderRadius;
@@ -466,4 +487,3 @@ function MyComponent() {
 **Last Updated**: December 2025  
 **MUI Version**: 7.2.0  
 **MRS Design System**: v1.0
-

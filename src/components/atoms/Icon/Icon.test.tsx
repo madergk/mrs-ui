@@ -63,4 +63,3 @@ describe('Icon', () => {
     expect(container.querySelector('[data-testid="icon-test"]')).toBeInTheDocument();
   });
 });
-

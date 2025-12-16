@@ -42,27 +42,32 @@ Created comprehensive guides:
 ## Preserved MRS Values
 
 ### ✅ Palette (Verones)
+
 - Primary: `#00686F`
 - Secondary: `#99CC00`
 - All semantic colors maintained
 
 ### ✅ Typography (Nunito)
+
 - Font Family: `Nunito, Helvetica, Arial, sans-serif`
 - All variants use Nunito
 - Base font size: 14px
 - HTML font size: 16px
 
 ### ✅ Spacing
+
 - 4px-based scale: `[0, 4, 8, 12, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96]`
 - Array-based with function conversion
 
 ### ✅ Shape
+
 - Default: 4px
 - Custom values: sm (4px), md (8px), lg (12px), xl (24px), rounded (9999px)
 
 ## New Features
 
 ### Breakpoints
+
 ```typescript
 breakpoints: {
   values: { xs: 0, sm: 600, md: 900, lg: 1200, xl: 1536 },
@@ -72,6 +77,7 @@ breakpoints: {
 ```
 
 ### z-index
+
 ```typescript
 zIndex: {
   mobileStepper: 1000,
@@ -85,6 +91,7 @@ zIndex: {
 ```
 
 ### Transitions
+
 ```typescript
 transitions: {
   duration: { shortest: 150, shorter: 200, short: 250, ... },
@@ -93,6 +100,7 @@ transitions: {
 ```
 
 ### Container Queries
+
 ```typescript
 containerQueries: {
   enabled: true,
@@ -105,20 +113,20 @@ containerQueries: {
 
 ```typescript
 // Before (needs update in components)
-theme.shape.rounded // ❌ Not available
+theme.shape.rounded; // ❌ Not available
 
 // After (correct usage)
-theme.shape.custom?.rounded // ✅ Available
-theme.shape.custom?.md // ✅ Available
+theme.shape.custom?.rounded; // ✅ Available
+theme.shape.custom?.md; // ✅ Available
 ```
 
 ### Spacing Function
 
 ```typescript
 // Array-based spacing with function
-theme.spacing(2) // 8px
-theme.spacing(1, 2) // 4px 8px
-theme.spacing(1, 'auto') // 4px auto
+theme.spacing(2); // 8px
+theme.spacing(1, 2); // 4px 8px
+theme.spacing(1, 'auto'); // 4px auto
 ```
 
 ### Responsive Design
@@ -165,4 +173,3 @@ Some components need updates to use the new shape structure:
 **Date**: December 2025  
 **Status**: ✅ Theme configuration complete  
 **Next**: Component updates for shape.custom usage
-

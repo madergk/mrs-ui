@@ -51,10 +51,10 @@ describe('Button', () => {
   it('handles click events', async () => {
     const handleClick = jest.fn();
     render(<Button onClick={handleClick}>Click me</Button>);
-    
+
     const button = screen.getByText('Click me');
     await userEvent.click(button);
-    
+
     expect(handleClick).toHaveBeenCalledTimes(1);
   });
 
@@ -81,4 +81,3 @@ describe('Button', () => {
     expect(screen.getByTestId('button-test')).toBeInTheDocument();
   });
 });
-

@@ -48,6 +48,7 @@ The Figma MCP server has been configured to connect to Figma's remote server:
 **File URL**: https://www.figma.com/design/ESNP5KunFotGObfcuXZ9Op/MRS---Material-UI-v.7.2.0?node-id=11084-151779&m=dev
 
 **Extraction Results**:
+
 - ✅ Total Styles: 101
 - ✅ Typography Styles: 13 (h1-h6, body, subtitle, caption, overline)
 - ✅ Elevation Styles: 24 (elevation 1-24)
@@ -63,6 +64,7 @@ The Figma MCP server has been configured to connect to Figma's remote server:
 **Script**: `scripts/figma-token-extractor.js`
 
 **Features**:
+
 - Connects to Figma REST API
 - Extracts all design styles
 - Organizes by category (typography, elevation, components)
@@ -70,11 +72,13 @@ The Figma MCP server has been configured to connect to Figma's remote server:
 - Generates structured JSON exports
 
 **Usage**:
+
 ```bash
 node scripts/figma-token-extractor.js
 ```
 
 **Output Files**:
+
 1. `figma-design-tokens-full.json` - Complete extraction
 2. `figma-design-tokens-summary.json` - Summary statistics
 3. `figma-export-raw.json` - Raw API response
@@ -83,11 +87,11 @@ node scripts/figma-token-extractor.js
 
 ### ✅ 5. Documentation Created
 
-| File | Description |
-|------|-------------|
-| `DESIGN_SYSTEM_RULES.md` | Comprehensive design system rules with Figma integration |
-| `FIGMA_SYNC_GUIDE.md` | Step-by-step guide for syncing Figma with code |
-| `FIGMA_SETUP_COMPLETE.md` | This summary document |
+| File                      | Description                                              |
+| ------------------------- | -------------------------------------------------------- |
+| `DESIGN_SYSTEM_RULES.md`  | Comprehensive design system rules with Figma integration |
+| `FIGMA_SYNC_GUIDE.md`     | Step-by-step guide for syncing Figma with code           |
+| `FIGMA_SETUP_COMPLETE.md` | This summary document                                    |
 
 ---
 
@@ -150,6 +154,7 @@ cat FIGMA_SYNC_GUIDE.md
    - MCP server will connect automatically
 
 2. **Review Extracted Tokens**
+
    ```bash
    cat figma-design-tokens-summary.json
    ```
@@ -164,11 +169,13 @@ cat FIGMA_SYNC_GUIDE.md
 **When Figma File is Updated**:
 
 1. Run extraction:
+
    ```bash
    node scripts/figma-token-extractor.js
    ```
 
 2. Review changes:
+
    ```bash
    cat figma-design-tokens-summary.json
    ```
@@ -179,6 +186,7 @@ cat FIGMA_SYNC_GUIDE.md
    - Update `DESIGN_SYSTEM_RULES.md`
 
 4. Validate:
+
    ```bash
    npm run type-check
    npm run lint
@@ -200,16 +208,19 @@ cat FIGMA_SYNC_GUIDE.md
 Based on the extraction, the Figma file contains:
 
 ### Typography Styles (13)
+
 - h1, h2, h3, h4, h5, h6
 - body1, body2
 - subtitle1, subtitle2
 - caption, overline
 
 ### Elevation Styles (24)
+
 - elevation/1 through elevation/24
 - Material UI standard shadow levels
 
 ### Component Styles (50)
+
 - **Input**: label, value, helper
 - **Avatar**: initialsSm, initialsMd, initialsLg
 - **Button**: small, medium, large
@@ -228,14 +239,14 @@ Based on the extraction, the Figma file contains:
 
 ## Integration Status
 
-| Feature | Status | Notes |
-|---------|--------|-------|
-| Figma Personal Access Token | ✅ Active | Valid and tested |
-| Figma MCP Server Config | ✅ Configured | Needs Claude Desktop restart |
-| Token Extraction Script | ✅ Working | Successfully extracted 101 styles |
-| Design System Rules Doc | ✅ Created | Comprehensive guide with Figma data |
-| Sync Workflow Guide | ✅ Created | Step-by-step instructions |
-| Automated Sync | ⏳ Ready | Can be triggered anytime |
+| Feature                     | Status        | Notes                               |
+| --------------------------- | ------------- | ----------------------------------- |
+| Figma Personal Access Token | ✅ Active     | Valid and tested                    |
+| Figma MCP Server Config     | ✅ Configured | Needs Claude Desktop restart        |
+| Token Extraction Script     | ✅ Working    | Successfully extracted 101 styles   |
+| Design System Rules Doc     | ✅ Created    | Comprehensive guide with Figma data |
+| Sync Workflow Guide         | ✅ Created    | Step-by-step instructions           |
+| Automated Sync              | ⏳ Ready      | Can be triggered anytime            |
 
 ---
 
@@ -244,6 +255,7 @@ Based on the extraction, the Figma file contains:
 ### If MCP Server Doesn't Activate
 
 1. Verify config file location:
+
    ```bash
    cat ~/Library/Application\ Support/Claude/claude_desktop_config.json
    ```
@@ -255,6 +267,7 @@ Based on the extraction, the Figma file contains:
 ### If Token Extraction Fails
 
 1. Verify token is valid:
+
    ```bash
    curl -H "X-Figma-Token: YOUR_FIGMA_ACCESS_TOKEN" \
      "https://api.figma.com/v1/me"
@@ -281,6 +294,7 @@ Based on the extraction, the Figma file contains:
 ## Success Metrics
 
 ✅ **All objectives completed**:
+
 1. Figma MCP server configured
 2. Personal access token created and validated
 3. Figma file accessed successfully

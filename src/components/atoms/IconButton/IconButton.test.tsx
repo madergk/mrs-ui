@@ -30,7 +30,7 @@ describe('IconButton', () => {
         <Icon icon="home" />
       </IconButton>
     );
-    
+
     const button = container.querySelector('button');
     if (button) {
       await userEvent.click(button);
@@ -88,4 +88,3 @@ describe('IconButton', () => {
     expect(button).toBeInTheDocument();
   });
 });
-

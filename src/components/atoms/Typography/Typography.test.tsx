@@ -34,4 +34,3 @@ describe('Typography', () => {
     expect(screen.getByTestId('typography-test')).toBeInTheDocument();
   });
 });
-

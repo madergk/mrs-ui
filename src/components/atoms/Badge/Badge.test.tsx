@@ -83,4 +83,3 @@ describe('Badge', () => {
     expect(badge).not.toBeInTheDocument();
   });
 });
-

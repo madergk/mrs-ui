@@ -42,20 +42,31 @@ describe('Link', () => {
   });
 
   it('applies always underline', () => {
-    const { container } = renderWithTheme(<Link href="/test" underline="always">Link</Link>);
+    const { container } = renderWithTheme(
+      <Link href="/test" underline="always">
+        Link
+      </Link>
+    );
     const link = container.querySelector('.MuiLink-underlineAlways');
     expect(link).toBeInTheDocument();
   });
 
   it('applies none underline', () => {
-    const { container } = renderWithTheme(<Link href="/test" underline="none">Link</Link>);
+    const { container } = renderWithTheme(
+      <Link href="/test" underline="none">
+        Link
+      </Link>
+    );
     const link = container.querySelector('.MuiLink-underlineNone');
     expect(link).toBeInTheDocument();
   });
 
   it('passes through additional props', () => {
-    renderWithTheme(<Link href="/test" data-testid="link-test">Link</Link>);
+    renderWithTheme(
+      <Link href="/test" data-testid="link-test">
+        Link
+      </Link>
+    );
     expect(screen.getByTestId('link-test')).toBeInTheDocument();
   });
 });
-

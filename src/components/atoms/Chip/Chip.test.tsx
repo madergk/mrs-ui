@@ -52,7 +52,7 @@ describe('Chip', () => {
   it('calls onDelete when delete icon is clicked', async () => {
     const handleDelete = jest.fn();
     const { container } = renderWithTheme(<Chip label="Chip" onDelete={handleDelete} />);
-    
+
     const deleteIcon = container.querySelector('.MuiChip-deleteIcon');
     if (deleteIcon) {
       await userEvent.click(deleteIcon);
@@ -71,4 +71,3 @@ describe('Chip', () => {
     expect(chip).toBeInTheDocument();
   });
 });
-

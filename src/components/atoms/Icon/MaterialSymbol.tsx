@@ -1,9 +1,9 @@
 /**
  * MaterialSymbol Component
- * 
+ *
  * Material Symbols font icon component using Google Fonts.
  * Uses Material Symbols Rounded family with proper font-variation-settings.
- * 
+ *
  * Reference: https://developers.google.com/fonts/docs/material_symbols
  */
 
@@ -47,15 +47,24 @@ export interface MaterialSymbolProps extends Omit<BoxProps, 'children'> {
    * Icon color from theme
    * @default 'action'
    */
-  color?: 'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success' | 'action' | 'disabled' | 'inherit';
+  color?:
+    | 'primary'
+    | 'secondary'
+    | 'error'
+    | 'warning'
+    | 'info'
+    | 'success'
+    | 'action'
+    | 'disabled'
+    | 'inherit';
 }
 
 /**
  * MaterialSymbol component that renders Material Symbols font icons
- * 
+ *
  * Uses Material Symbols Rounded family with proper font-variation-settings
  * to match typography (Nunito 400) optical size.
- * 
+ *
  * @example
  * ```tsx
  * <MaterialSymbol icon="home" size={24} />
@@ -132,4 +141,3 @@ export const MaterialSymbol: React.FC<MaterialSymbolProps> = ({
 };
 
 export default MaterialSymbol;
-

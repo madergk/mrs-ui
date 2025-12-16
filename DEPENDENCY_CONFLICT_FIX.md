@@ -4,7 +4,7 @@
 
 The project had dependency conflicts after running `npm audit fix`:
 
-1. **Vite version conflict**: 
+1. **Vite version conflict**:
    - `vite@7.3.0` was installed (from audit fix)
    - `@storybook/react-vite@8.6.14` requires `vite@^4.0.0 || ^5.0.0 || ^6.0.0`
    - **Conflict**: Vite 7 is not compatible with Storybook 8
@@ -35,9 +35,9 @@ The project had dependency conflicts after running `npm audit fix`:
 ```json
 {
   "devDependencies": {
-    "vite": "^6.0.0",                    // Was: ^7.3.0
-    "vite-plugin-dts": "^3.9.1",        // Was: ^4.5.4
-    "@storybook/test-runner": "^0.16.0"  // Was: ^0.24.2
+    "vite": "^6.0.0", // Was: ^7.3.0
+    "vite-plugin-dts": "^3.9.1", // Was: ^4.5.4
+    "@storybook/test-runner": "^0.16.0" // Was: ^0.24.2
   }
 }
 ```
@@ -51,6 +51,7 @@ The project had dependency conflicts after running `npm audit fix`:
 ## Security Note
 
 The security vulnerabilities in `esbuild` and `vue-template-compiler` remain because:
+
 - They are in **dev dependencies only** (lower risk)
 - Fixing them requires major version updates (breaking changes)
 - Current versions are stable and working
@@ -58,6 +59,7 @@ The security vulnerabilities in `esbuild` and `vue-template-compiler` remain bec
 ## Future Updates
 
 When ready to upgrade:
+
 1. **Storybook 10** → Supports Vite 7
 2. **Vite 7** → After Storybook upgrade
 3. **vite-plugin-dts 4.x** → After Vite 7 upgrade
@@ -67,4 +69,3 @@ When ready to upgrade:
 **Date**: December 2025  
 **Status**: ✅ Resolved  
 **Action**: Dependencies reinstalled successfully
-

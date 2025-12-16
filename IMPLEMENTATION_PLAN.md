@@ -17,6 +17,7 @@ Implement a comprehensive Material-UI v7.2.0 component library based on the Figm
 The Figma design contains **6 main sections** with **44 total components**:
 
 ### 1. **Inputs** (14 components)
+
 - Autocomplete
 - Button
 - ButtonGroup
@@ -33,6 +34,7 @@ The Figma design contains **6 main sections** with **44 total components**:
 - ToggleButtonGroup
 
 ### 2. **Data Display** (10 components)
+
 - Avatar
 - Badge
 - Chip
@@ -45,6 +47,7 @@ The Figma design contains **6 main sections** with **44 total components**:
 - Typography
 
 ### 3. **Feedback** (5 components)
+
 - Alert
 - Dialog
 - Progress (Linear, Circular)
@@ -52,12 +55,14 @@ The Figma design contains **6 main sections** with **44 total components**:
 - Snackbar
 
 ### 4. **Surfaces** (4 components)
+
 - Accordion
 - AppBar
 - Card
 - Paper
 
 ### 5. **Navigation** (9 components)
+
 - BottomNavigation
 - Link
 - Breadcrumbs
@@ -69,6 +74,7 @@ The Figma design contains **6 main sections** with **44 total components**:
 - Stepper
 
 ### 6. **Layout** (2 components)
+
 - Timeline
 - TreeView
 
@@ -90,12 +96,14 @@ src/
 ### Dependency Mapping
 
 **Foundation Layer** (No dependencies):
+
 - Typography
 - Icon
 - Divider
 - Paper
 
 **Basic Components** (Depend on Foundation):
+
 - Button
 - Chip
 - Avatar
@@ -103,6 +111,7 @@ src/
 - Link
 
 **Form Components** (Depend on Basic):
+
 - TextField
 - Select
 - Checkbox
@@ -113,6 +122,7 @@ src/
 - Rating
 
 **Composite Components** (Depend on Multiple):
+
 - ButtonGroup
 - ToggleButtonGroup
 - TransferList
@@ -122,6 +132,7 @@ src/
 - Accordion
 
 **Complex Components** (Depend on Many):
+
 - Dialog
 - Drawer
 - Menu
@@ -137,6 +148,7 @@ src/
 **Goal**: Establish project structure and implement foundational components
 
 #### 1.1 Project Setup
+
 - [ ] Initialize React + TypeScript project structure
 - [ ] Configure Material-UI v7.2.0
 - [ ] Set up theme provider with `theme.json`
@@ -146,6 +158,7 @@ src/
 - [ ] Set up testing framework (Jest + Testing Library)
 
 #### 1.2 Foundation Components (Atoms)
+
 - [ ] **Typography** - Text display component
 - [ ] **Icon** - Icon wrapper component
 - [ ] **Divider** - Separator component
@@ -154,6 +167,7 @@ src/
 **Why First**: These are the building blocks that other components depend on.
 
 **Token Mapping**:
+
 - Typography → `theme.typography.*`
 - Icon → `theme.palette.icon.*`
 - Divider → `theme.palette.divider`
@@ -166,6 +180,7 @@ src/
 **Goal**: Implement core interactive elements
 
 #### 2.1 Button Family
+
 - [ ] **Button** - Primary action component
   - Variants: contained, outlined, text
   - Sizes: small, medium, large
@@ -174,17 +189,20 @@ src/
 - [ ] **IconButton** - Icon-only button
 
 **Token Mapping**:
+
 - Button → `theme.palette.primary.*`, `theme.palette.primary._states.*`
 - Border radius → `theme.shape.rounded` (pill shape)
 - Spacing → `theme.spacing()` function
 
 #### 2.2 Display Components
+
 - [ ] **Avatar** - User/profile image
 - [ ] **Badge** - Notification indicator
 - [ ] **Chip** - Tag/label component
 - [ ] **Link** - Text link component
 
 **Token Mapping**:
+
 - Avatar → `theme.palette.primary.main` (default)
 - Badge → `theme.palette.error.main`
 - Chip → `theme.palette.action.*`
@@ -196,6 +214,7 @@ src/
 **Goal**: Implement all form input components
 
 #### 3.1 Text Inputs
+
 - [ ] **TextField** - Text input field
   - Variants: standard, filled, outlined
   - States: default, focus, error, disabled
@@ -203,11 +222,13 @@ src/
 - [ ] **Autocomplete** - Text input with suggestions
 
 **Token Mapping**:
+
 - TextField → `theme.palette._components.input.*`
 - Border colors → `theme.palette._components.input.{variant}.enabledBorder`
 - Error state → `theme.palette.error.main`
 
 #### 3.2 Selection Inputs
+
 - [ ] **Select** - Dropdown selection
 - [ ] **Checkbox** - Binary selection
 - [ ] **Radio** - Single choice selection
@@ -215,17 +236,21 @@ src/
 - [ ] **ToggleButtonGroup** - Group of toggle buttons
 
 **Token Mapping**:
+
 - Switch → `theme.palette._components.switch.*`
 - Checkbox/Radio → `theme.palette.primary._states.*`
 
 #### 3.3 Range Inputs
+
 - [ ] **Slider** - Range selection
 - [ ] **Rating** - Star rating input
 
 **Token Mapping**:
+
 - Rating → `theme.palette._components.rating.*`
 
 #### 3.4 Complex Inputs
+
 - [ ] **TransferList** - Dual list selection
 - [ ] **ButtonGroup** - Group of buttons
 
@@ -236,15 +261,18 @@ src/
 **Goal**: Implement components for displaying data
 
 #### 4.1 Lists & Tables
+
 - [ ] **List** - Vertical list container
 - [ ] **ListItem** - List item component
 - [ ] **Table** - Data table
   - TableHead, TableBody, TableRow, TableCell
 
 **Token Mapping**:
+
 - Table → `theme.palette._components.table.border`
 
 #### 4.2 Date/Time
+
 - [ ] **DateRangeCalendar** - Date range picker
 - [ ] **MobileDateTimePicker** - Mobile date/time picker
 
@@ -257,20 +285,24 @@ src/
 **Goal**: Implement user feedback mechanisms
 
 #### 5.1 Alerts & Notifications
+
 - [ ] **Alert** - Status message component
   - Variants: filled, outlined, standard
   - Severities: error, warning, info, success
 - [ ] **Snackbar** - Toast notification
 
 **Token Mapping**:
+
 - Alert → `theme.palette._components.alert.{severity}.{variant}.*`
 
 #### 5.2 Progress Indicators
+
 - [ ] **Progress (Linear)** - Horizontal progress bar
 - [ ] **Progress (Circular)** - Circular progress indicator
 - [ ] **Skeleton** - Loading placeholder
 
 #### 5.3 Dialogs
+
 - [ ] **Dialog** - Modal dialog component
   - DialogTitle, DialogContent, DialogActions
 
@@ -286,6 +318,7 @@ src/
 - [ ] **AppBar** - Application header bar
 
 **Token Mapping**:
+
 - Card → `theme.shape.md` (border radius)
 - Elevation → `theme.palette._components.elevation.*`
 
@@ -296,6 +329,7 @@ src/
 **Goal**: Implement navigation and wayfinding components
 
 #### 7.1 Navigation
+
 - [ ] **BottomNavigation** - Mobile bottom nav
 - [ ] **Tabs** - Tab navigation
 - [ ] **Breadcrumbs** - Navigation path
@@ -304,6 +338,7 @@ src/
 - [ ] **SpeedDial** - Floating action menu
 
 #### 7.2 Pagination & Steppers
+
 - [ ] **Pagination** - Page navigation
 - [ ] **Stepper** - Step indicator
 
@@ -325,6 +360,7 @@ src/
 ### Current Theme Structure
 
 The `theme.json` already contains:
+
 - ✅ Color schemes (light/dark)
 - ✅ Typography scale
 - ✅ Spacing array
@@ -341,7 +377,7 @@ import { useTheme } from '@mui/material/styles';
 
 export const Button = (props: ButtonProps) => {
   const theme = useTheme();
-  
+
   return (
     <MuiButton
       {...props}
@@ -351,7 +387,7 @@ export const Button = (props: ButtonProps) => {
         color: theme.palette.primary.contrastText,
         borderRadius: theme.shape.rounded,
         padding: theme.spacing(1, 2),
-        
+
         // Use state tokens
         '&:hover': {
           backgroundColor: theme.palette.primary._states.hover,
@@ -407,12 +443,12 @@ export interface CustomButtonProps extends ButtonProps {
   // Custom props if needed
 }
 
-export const Button = ({ 
-  children, 
-  ...props 
+export const Button = ({
+  children,
+  ...props
 }: CustomButtonProps) => {
   const theme = useTheme();
-  
+
   return (
     <MuiButton
       {...props}
@@ -436,6 +472,7 @@ export const Button = ({
 For each component:
 
 ### Design Consistency
+
 - [ ] Visual appearance matches Figma design
 - [ ] Colors use theme tokens (no hardcoded values)
 - [ ] Typography uses theme scale
@@ -445,6 +482,7 @@ For each component:
 - [ ] Dark mode support verified
 
 ### Code Quality
+
 - [ ] TypeScript types defined
 - [ ] Props properly documented (JSDoc)
 - [ ] No hardcoded values (use tokens)
@@ -454,12 +492,14 @@ For each component:
 - [ ] Screen reader tested
 
 ### Testing
+
 - [ ] Unit tests written
 - [ ] Component tests (rendering, interactions)
 - [ ] Accessibility tests
 - [ ] Visual regression tests (if Chromatic configured)
 
 ### Documentation
+
 - [ ] Storybook story created
 - [ ] Usage examples documented
 - [ ] Props table generated
@@ -510,6 +550,7 @@ For each component:
 ## 📦 Dependencies Required
 
 ### Core
+
 ```json
 {
   "@mui/material": "^7.2.0",
@@ -520,6 +561,7 @@ For each component:
 ```
 
 ### Date/Time Pickers
+
 ```json
 {
   "@mui/x-date-pickers": "^7.0.0"
@@ -527,6 +569,7 @@ For each component:
 ```
 
 ### Development
+
 ```json
 {
   "@storybook/react": "^7.0.0",
@@ -544,6 +587,7 @@ For each component:
 ### Phase Completion Criteria
 
 Each phase is complete when:
+
 1. ✅ All components in phase are implemented
 2. ✅ All components use theme tokens (no hardcoded values)
 3. ✅ All components have Storybook stories
@@ -556,6 +600,7 @@ Each phase is complete when:
 ### Overall Success Criteria
 
 The component library is complete when:
+
 1. ✅ All 44 components implemented
 2. ✅ Full Storybook documentation
 3. ✅ TypeScript types exported
@@ -571,17 +616,20 @@ The component library is complete when:
 ### For Developers
 
 1. **Set up project**:
+
    ```bash
    npm install
    npm run dev
    ```
 
 2. **View components**:
+
    ```bash
    npm run storybook
    ```
 
 3. **Run tests**:
+
    ```bash
    npm test
    ```
@@ -608,22 +656,26 @@ The component library is complete when:
 ## 📝 Notes & Considerations
 
 ### Design System Alignment
+
 - All components must follow MRS Design System Rules
 - Token-first approach (no hardcoded values)
 - Consistent naming conventions
 - Accessibility-first implementation
 
 ### Performance
+
 - Code splitting for large components
 - Tree shaking support
 - Lazy loading for complex components (Date pickers, etc.)
 
 ### Browser Support
+
 - Modern browsers (last 2 versions)
 - Mobile responsive (iOS Safari, Chrome Android)
 - Accessibility tools (screen readers)
 
 ### Future Enhancements
+
 - Animation system
 - Custom icon library (if needed)
 - Advanced theming (multiple themes)
@@ -643,4 +695,3 @@ The component library is complete when:
 **Last Updated**: December 2025  
 **Next Review**: After Phase 1 completion  
 **Maintained By**: MRS Design System Team
-

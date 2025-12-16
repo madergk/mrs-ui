@@ -61,17 +61,20 @@ npm run type-check
 ## When to Re-add
 
 ### @mui/x-date-pickers
+
 - **When**: Phase 4 - Data Display components
 - **Components**: DateRangeCalendar, MobileDateTimePicker
 - **Version**: Use latest v7.x or v8.x depending on MUI compatibility
 
 ### @mui/icons-material
+
 - **When**: Only if specific icons are needed that Material Symbols doesn't provide
 - **Note**: Material Symbols should cover all use cases
 
 ## Verification
 
 After removal, verify:
+
 - ✅ Build succeeds
 - ✅ Type checking passes
 - ✅ Tests pass
@@ -82,4 +85,3 @@ After removal, verify:
 
 **Date**: December 2025  
 **Status**: Ready to execute
-

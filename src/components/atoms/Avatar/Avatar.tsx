@@ -1,6 +1,6 @@
 /**
  * Avatar Component
- * 
+ *
  * User/profile image component.
  * Uses theme tokens for styling.
  */
@@ -35,7 +35,7 @@ export interface AvatarProps extends MuiAvatarProps {
 
 /**
  * Avatar component that consumes theme tokens
- * 
+ *
  * @example
  * ```tsx
  * <Avatar src="/path/to/image.jpg" alt="User" />
@@ -69,4 +69,3 @@ export const Avatar: React.FC<AvatarProps> = ({
 };
 
 export default Avatar;
-

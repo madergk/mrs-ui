@@ -18,6 +18,7 @@ This guide documents how to synchronize design tokens between Figma and the MRS 
 **Location**: `scripts/figma-token-extractor.js`
 
 **What it does**:
+
 - Connects to Figma REST API
 - Extracts all 101 design styles from the Figma file
 - Organizes styles by category (typography, elevation, components)
@@ -25,6 +26,7 @@ This guide documents how to synchronize design tokens between Figma and the MRS 
 - Generates JSON exports with full design token data
 
 **Usage**:
+
 ```bash
 # Run the extractor
 node scripts/figma-token-extractor.js
@@ -37,6 +39,7 @@ FIGMA_TOKEN=your-token node scripts/figma-token-extractor.js
 ```
 
 **Output Files**:
+
 1. `figma-design-tokens-full.json` - Complete extraction with all data
 2. `figma-design-tokens-summary.json` - Summary statistics and style categories
 3. `figma-export-raw.json` - Raw Figma API response (for debugging)
@@ -82,6 +85,7 @@ The Figma file contains 24 elevation levels (shadows):
 - `elevation/1` through `elevation/24`
 
 Material UI uses elevations 0-24, with the most common being:
+
 - 0: No shadow (flat)
 - 1: Subtle lift (cards at rest)
 - 2: Card hover state
@@ -95,21 +99,25 @@ Material UI uses elevations 0-24, with the most common being:
 50+ component-specific styles including:
 
 **Input Components**:
+
 - `input/label` - Input field labels
 - `input/value` - Input field values
 - `input/helper` - Helper text
 
 **Avatar Components**:
+
 - `avatar/initialsSm` - Small avatar initials
 - `avatar/initialsMd` - Medium avatar initials
 - `avatar/initialsLg` - Large avatar initials
 
 **Button Components**:
+
 - `button/small` - Small button text
 - `button/medium` - Medium button text
 - `button/large` - Large button text
 
 **Other Components**:
+
 - `chip/label` - Chip labels
 - `badge/label` - Badge labels
 - `tooltip/label` - Tooltip text
@@ -147,6 +155,7 @@ cat figma-design-tokens-summary.json
 After extracting, update the codebase:
 
 **Files to Update**:
+
 1. `design-tokens.json` - Raw token values
 2. `src/theme/designTokens.ts` - TypeScript token definitions
 3. `src/theme/theme.ts` - Material UI theme configuration (if needed)
@@ -201,12 +210,14 @@ For automated token extraction via Claude Code, the Figma MCP server is configur
 ```
 
 **Benefits**:
+
 - AI-powered token extraction
 - Automatic sync detection
 - Natural language queries about design file
 - Component specification extraction
 
 **Limitations**:
+
 - Requires Claude Desktop restart to activate
 - API rate limits apply (see Figma docs)
 - Requires valid personal access token
@@ -218,13 +229,16 @@ For automated token extraction via Claude Code, the Figma MCP server is configur
 **Current Token**: Set via environment variable `FIGMA_ACCESS_TOKEN` or MCP configuration
 
 **Scopes**:
+
 - `file_content:read` - Read file structure and nodes ✅
 - `file_metadata:read` - Read file metadata ✅
 
 **Missing Scopes** (not critical):
+
 - `file_variables:read` - For reading Figma variables (future enhancement)
 
 **How to Regenerate**:
+
 1. Go to Figma → Settings → Personal Access Tokens
 2. Create new token: "Claude MCP Server"
 3. Select scopes: `file_content:read`, `file_metadata:read`, `file_variables:read`
@@ -240,14 +254,17 @@ For automated token extraction via Claude Code, the Figma MCP server is configur
 ### Extraction Script Issues
 
 **Issue**: `404 Not found`
+
 - **Solution**: Verify file ID is correct
 - **Check**: URL should be `figma.com/design/ESNP5KunFotGObfcuXZ9Op/...`
 
 **Issue**: `403 Forbidden` or permission errors
+
 - **Solution**: Token may need regeneration or additional scopes
 - **Check**: Token has `file_content:read` permission
 
 **Issue**: `file_variables:read scope required`
+
 - **Solution**: Regenerate token with `file_variables:read` scope (optional)
 - **Impact**: Can't extract Figma Variables, but styles still work
 
@@ -256,6 +273,7 @@ For automated token extraction via Claude Code, the Figma MCP server is configur
 The MRS Figma file is large (2,036+ colors, 331+ typography instances). Extraction may take 10-30 seconds.
 
 **Optimization tips**:
+
 - Run extraction when Figma file version changes (not on every sync)
 - Use `figma-design-tokens-summary.json` for quick checks
 - Cache full extraction results
@@ -266,19 +284,19 @@ The MRS Figma file is large (2,036+ colors, 331+ typography instances). Extracti
 
 ### Generated Files
 
-| File | Purpose | Size | Keep in Git? |
-|------|---------|------|--------------|
-| `figma-design-tokens-full.json` | Complete extraction | ~500KB+ | No (gitignore) |
-| `figma-design-tokens-summary.json` | Summary stats | ~2KB | Yes |
-| `figma-export-raw.json` | Raw API response | ~20KB | No (gitignore) |
+| File                               | Purpose             | Size    | Keep in Git?   |
+| ---------------------------------- | ------------------- | ------- | -------------- |
+| `figma-design-tokens-full.json`    | Complete extraction | ~500KB+ | No (gitignore) |
+| `figma-design-tokens-summary.json` | Summary stats       | ~2KB    | Yes            |
+| `figma-export-raw.json`            | Raw API response    | ~20KB   | No (gitignore) |
 
 ### Configuration Files
 
-| File | Purpose |
-|------|---------|
-| `scripts/figma-token-extractor.js` | Extraction script |
-| `FIGMA_SYNC_GUIDE.md` | This guide |
-| `DESIGN_SYSTEM_RULES.md` | Design system rules (includes Figma sync section) |
+| File                               | Purpose                                           |
+| ---------------------------------- | ------------------------------------------------- |
+| `scripts/figma-token-extractor.js` | Extraction script                                 |
+| `FIGMA_SYNC_GUIDE.md`              | This guide                                        |
+| `DESIGN_SYSTEM_RULES.md`           | Design system rules (includes Figma sync section) |
 
 ### gitignore Recommendations
 
@@ -301,6 +319,7 @@ Figma REST API rate limits (as of 2025):
 - **Tier 2** (Dev/Full seats): Higher limits
 
 **Our usage**:
+
 - Token extraction: 1-2 API calls per run
 - Well within limits for manual syncs
 
@@ -309,11 +328,13 @@ Figma REST API rate limits (as of 2025):
 ## Next Steps
 
 1. **Review Extracted Data**:
+
    ```bash
    cat figma-design-tokens-summary.json
    ```
 
 2. **Compare with Current Tokens**:
+
    ```bash
    diff design-tokens.json figma-design-tokens-full.json
    ```

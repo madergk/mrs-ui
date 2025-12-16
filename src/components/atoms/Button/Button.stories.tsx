@@ -99,19 +99,37 @@ export const AllVariantsAndSizes: Story = {
   render: () => (
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
       <Stack direction="row" spacing={2} alignItems="center">
-        <Button variant="contained" size="small">Small Contained</Button>
-        <Button variant="contained" size="medium">Medium Contained</Button>
-        <Button variant="contained" size="large">Large Contained</Button>
+        <Button variant="contained" size="small">
+          Small Contained
+        </Button>
+        <Button variant="contained" size="medium">
+          Medium Contained
+        </Button>
+        <Button variant="contained" size="large">
+          Large Contained
+        </Button>
       </Stack>
       <Stack direction="row" spacing={2} alignItems="center">
-        <Button variant="outlined" size="small">Small Outlined</Button>
-        <Button variant="outlined" size="medium">Medium Outlined</Button>
-        <Button variant="outlined" size="large">Large Outlined</Button>
+        <Button variant="outlined" size="small">
+          Small Outlined
+        </Button>
+        <Button variant="outlined" size="medium">
+          Medium Outlined
+        </Button>
+        <Button variant="outlined" size="large">
+          Large Outlined
+        </Button>
       </Stack>
       <Stack direction="row" spacing={2} alignItems="center">
-        <Button variant="text" size="small">Small Text</Button>
-        <Button variant="text" size="medium">Medium Text</Button>
-        <Button variant="text" size="large">Large Text</Button>
+        <Button variant="text" size="small">
+          Small Text
+        </Button>
+        <Button variant="text" size="medium">
+          Medium Text
+        </Button>
+        <Button variant="text" size="large">
+          Large Text
+        </Button>
       </Stack>
     </Box>
   ),
@@ -129,4 +147,3 @@ export const WithIcons: Story = {
     </Stack>
   ),
 };
-

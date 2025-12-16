@@ -1,6 +1,6 @@
 /**
  * Icon Component Stories
- * 
+ *
  * Icon component using Material Symbols font icons.
  * Uses Material Symbols Rounded family with proper font-variation-settings.
  */
@@ -33,7 +33,17 @@ const meta: Meta<typeof Icon> = {
     },
     color: {
       control: 'select',
-      options: ['primary', 'secondary', 'error', 'warning', 'info', 'success', 'action', 'disabled', 'inherit'],
+      options: [
+        'primary',
+        'secondary',
+        'error',
+        'warning',
+        'info',
+        'success',
+        'action',
+        'disabled',
+        'inherit',
+      ],
       description: 'Icon color from theme',
     },
     fill: {
@@ -155,4 +165,3 @@ export const WeightVariants: Story = {
     </Stack>
   ),
 };
-

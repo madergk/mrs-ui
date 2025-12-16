@@ -1,6 +1,6 @@
 /**
  * Button Component
- * 
+ *
  * Primary action component with variants and sizes.
  * Uses theme tokens for styling and follows MRS design system rules.
  */
@@ -29,12 +29,12 @@ export interface ButtonProps extends Omit<MuiButtonProps, 'variant' | 'size'> {
 
 /**
  * Button component that consumes theme tokens
- * 
+ *
  * Follows MRS design system rules:
  * - Uses pill shape (rounded) border radius
  * - Uses theme color tokens and state tokens
  * - Sentence case labels recommended
- * 
+ *
  * @example
  * ```tsx
  * <Button variant="contained">Submit</Button>
@@ -54,7 +54,9 @@ export const Button: React.FC<ButtonProps> = ({
   // Get color palette (handle 'inherit' case)
   const getColorPalette = () => {
     if (color === 'inherit') return undefined;
-    return theme.palette[color as 'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success'];
+    return theme.palette[
+      color as 'primary' | 'secondary' | 'error' | 'warning' | 'info' | 'success'
+    ];
   };
 
   const colorPalette = getColorPalette();
@@ -71,14 +73,16 @@ export const Button: React.FC<ButtonProps> = ({
         textTransform: 'none',
         // Use theme state tokens for hover and focus
         '&:hover': {
-          backgroundColor: variant === 'contained' && colorPalette && '._states' in colorPalette
-            ? (colorPalette as any)._states?.hover
-            : undefined,
+          backgroundColor:
+            variant === 'contained' && colorPalette && '._states' in colorPalette
+              ? (colorPalette as any)._states?.hover
+              : undefined,
         },
         '&:focus-visible': {
-          outline: colorPalette && '_states' in colorPalette
-            ? `2px solid ${(colorPalette as any)._states?.focusVisible}`
-            : undefined,
+          outline:
+            colorPalette && '_states' in colorPalette
+              ? `2px solid ${(colorPalette as any)._states?.focusVisible}`
+              : undefined,
           outlineOffset: '2px',
         },
         ...sx,
@@ -89,4 +93,3 @@ export const Button: React.FC<ButtonProps> = ({
 };
 
 export default Button;
-

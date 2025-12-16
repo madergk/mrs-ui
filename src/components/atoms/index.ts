@@ -1,6 +1,6 @@
 /**
  * Atoms - Foundation Components
- * 
+ *
  * Export all atom-level components (basic building blocks)
  */
 
@@ -39,3 +39,14 @@ export type { ChipProps } from './Chip';
 export { Link } from './Link';
 export type { LinkProps } from './Link';
 
+export { TextField } from './TextField';
+export type { TextFieldProps } from './TextField';
+
+export { Select, MenuItem } from './Select';
+export type { SelectProps, MenuItemProps } from './Select';
+
+export { Rating } from './Rating';
+export type { RatingProps } from './Rating';
+
+export { Switch } from './Switch';
+export type { SwitchProps } from './Switch';

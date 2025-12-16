@@ -12,14 +12,28 @@ const meta: Meta<typeof Typography> = {
   parameters: {
     docs: {
       description: {
-        component: 'Typography component that uses theme typography tokens. Supports all Material-UI typography variants.',
+        component:
+          'Typography component that uses theme typography tokens. Supports all Material-UI typography variants.',
       },
     },
   },
   argTypes: {
     variant: {
       control: 'select',
-      options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'subtitle1', 'subtitle2', 'body1', 'body2', 'caption', 'overline'],
+      options: [
+        'h1',
+        'h2',
+        'h3',
+        'h4',
+        'h5',
+        'h6',
+        'subtitle1',
+        'subtitle2',
+        'body1',
+        'body2',
+        'caption',
+        'overline',
+      ],
       description: 'Typography variant from theme',
     },
     component: {
@@ -62,7 +76,8 @@ export const Heading3: Story = {
 export const Body1: Story = {
   args: {
     variant: 'body1',
-    children: 'Body 1 text - This is the default body text style used for paragraphs and general content.',
+    children:
+      'Body 1 text - This is the default body text style used for paragraphs and general content.',
   },
 };
 
@@ -127,4 +142,3 @@ export const AllVariants: Story = {
     </div>
   ),
 };
-

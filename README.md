@@ -15,37 +15,44 @@ npm install
 ## 🚀 Development
 
 ### Start Development Server
+
 ```bash
 npm run dev
 ```
 
 ### Start Storybook
+
 ```bash
 npm run storybook
 ```
 
 ### Run Tests
+
 ```bash
 npm test
 ```
 
 ### Run Tests in Watch Mode
+
 ```bash
 npm run test:watch
 ```
 
 ### Type Checking
+
 ```bash
 npm run type-check
 ```
 
 ### Linting
+
 ```bash
 npm run lint
 npm run lint:fix
 ```
 
 ### Formatting
+
 ```bash
 npm run format
 npm run format:check
@@ -54,6 +61,7 @@ npm run format:check
 ## 🏗️ Build
 
 ### Build Library
+
 ```bash
 npm run build
 ```
@@ -77,6 +85,7 @@ src/
 ## 🎨 Theme System
 
 The theme is configured from `theme.json` and supports:
+
 - Light and dark color schemes
 - Typography scale
 - Spacing system (8px grid)
@@ -145,4 +154,3 @@ See [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md) for the complete implemen
 ## 📄 License
 
 MIT
-

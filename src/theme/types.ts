@@ -1,6 +1,6 @@
 /**
  * Theme Type Definitions
- * 
+ *
  * TypeScript type declarations for MRS Design System theme extensions.
  * Extends MUI theme types with custom properties.
  */
@@ -84,4 +84,3 @@ declare module '@mui/material/styles' {
  * Re-export theme types for convenience
  */
 export type { Theme, ThemeOptions } from '@mui/material/styles';
-

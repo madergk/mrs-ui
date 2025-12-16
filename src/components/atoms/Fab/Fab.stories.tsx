@@ -31,7 +31,16 @@ const meta: Meta<typeof Fab> = {
     },
     color: {
       control: 'select',
-      options: ['primary', 'secondary', 'error', 'warning', 'info', 'success', 'inherit', 'default'],
+      options: [
+        'primary',
+        'secondary',
+        'error',
+        'warning',
+        'info',
+        'success',
+        'inherit',
+        'default',
+      ],
       description: 'Fab color',
     },
     disabled: {
@@ -121,4 +130,3 @@ export const States: Story = {
     </Stack>
   ),
 };
-
