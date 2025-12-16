@@ -48,8 +48,6 @@ export const Switch: React.FC<SwitchProps> = ({
   sx,
   ...props
 }) => {
-  const theme = useTheme();
-
   return (
     <MuiSwitch
       color={color}

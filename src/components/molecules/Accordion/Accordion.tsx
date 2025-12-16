@@ -44,14 +44,15 @@ export const Accordion: React.FC<AccordionProps> = ({ sx, ...props }) => {
   return (
     <MuiAccordion
       sx={{
-        borderRadius: theme.shape.custom?.md ?? theme.shape.borderRadius,
+        // Accordion uses lg (12px) border radius from theme
+        borderRadius: theme.shape.custom?.lg ?? theme.shape.borderRadius,
         '&:first-of-type': {
-          borderTopLeftRadius: theme.shape.custom?.md ?? theme.shape.borderRadius,
-          borderTopRightRadius: theme.shape.custom?.md ?? theme.shape.borderRadius,
+          borderTopLeftRadius: theme.shape.custom?.lg ?? theme.shape.borderRadius,
+          borderTopRightRadius: theme.shape.custom?.lg ?? theme.shape.borderRadius,
         },
         '&:last-of-type': {
-          borderBottomLeftRadius: theme.shape.custom?.md ?? theme.shape.borderRadius,
-          borderBottomRightRadius: theme.shape.custom?.md ?? theme.shape.borderRadius,
+          borderBottomLeftRadius: theme.shape.custom?.lg ?? theme.shape.borderRadius,
+          borderBottomRightRadius: theme.shape.custom?.lg ?? theme.shape.borderRadius,
         },
         ...sx,
       }}

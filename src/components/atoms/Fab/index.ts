@@ -1,3 +1,1 @@
-export { Fab } from './Fab';
-export type { FabProps } from './Fab';
-export default Fab;
+export { Fab, type FabProps, Fab as default } from './Fab';

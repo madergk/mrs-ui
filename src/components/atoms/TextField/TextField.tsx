@@ -44,8 +44,6 @@ export const TextField: React.FC<TextFieldProps> = ({
   sx,
   ...props
 }) => {
-  const theme = useTheme();
-
   return (
     <MuiTextField
       variant={variant}

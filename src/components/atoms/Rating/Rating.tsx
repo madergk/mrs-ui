@@ -6,7 +6,6 @@
  */
 
 import React from 'react';
-import { useTheme } from '@mui/material/styles';
 import { Rating as MuiRating, RatingProps as MuiRatingProps } from '@mui/material';
 
 export interface RatingProps extends MuiRatingProps {
@@ -54,8 +53,6 @@ export const Rating: React.FC<RatingProps> = ({
   sx,
   ...props
 }) => {
-  const theme = useTheme();
-
   return (
     <MuiRating
       value={value}

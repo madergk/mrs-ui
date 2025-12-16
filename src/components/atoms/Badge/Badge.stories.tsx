@@ -7,7 +7,7 @@ import { Badge } from './Badge';
 import { IconButton } from '../IconButton';
 import { Avatar } from '../Avatar';
 import { Icon } from '../Icon';
-import { Stack, Box } from '@mui/material';
+import { Stack } from '@mui/material';
 
 const meta: Meta<typeof Badge> = {
   title: 'Atoms/Badge',

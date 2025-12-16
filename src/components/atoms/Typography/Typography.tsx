@@ -41,7 +41,7 @@ export const Typography: React.FC<TypographyProps> = ({
   ...props
 }) => {
   return (
-    <MuiTypography variant={variant} component={component} {...props}>
+    <MuiTypography variant={variant} {...(component ? { component } : {})} {...props}>
       {children}
     </MuiTypography>
   );

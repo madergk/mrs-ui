@@ -50,7 +50,8 @@ export const Card: React.FC<CardProps> = ({
       elevation={variant === 'elevation' ? elevation : 0}
       variant={variant}
       sx={{
-        borderRadius: theme.shape.custom?.md ?? theme.shape.borderRadius,
+        // Cards use lg (12px) border radius from theme
+        borderRadius: theme.shape.custom?.lg ?? theme.shape.borderRadius,
         ...sx,
       }}
       {...props}

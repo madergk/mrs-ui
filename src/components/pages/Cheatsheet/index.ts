@@ -1,2 +1,1 @@
-export { Cheatsheet } from './Cheatsheet';
-export default Cheatsheet;
+export { Cheatsheet, Cheatsheet as default } from './Cheatsheet';

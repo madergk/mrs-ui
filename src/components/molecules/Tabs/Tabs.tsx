@@ -54,8 +54,6 @@ export const Tabs: React.FC<TabsProps> = ({
   sx,
   ...props
 }) => {
-  const theme = useTheme();
-
   return (
     <MuiTabs
       variant={variant}
@@ -74,7 +72,7 @@ export interface TabProps extends Omit<MuiTabProps, 'icon'> {
   /**
    * Tab label
    */
-  label: React.ReactNode;
+  label?: React.ReactNode;
   /**
    * Tab icon
    */

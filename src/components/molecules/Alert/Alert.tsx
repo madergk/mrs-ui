@@ -12,11 +12,9 @@ import {
   AlertProps as MuiAlertProps,
   AlertTitle as MuiAlertTitle,
   AlertTitleProps as MuiAlertTitleProps,
-  IconButton as MuiIconButton,
 } from '@mui/material';
-import { Close as CloseIcon } from '@mui/icons-material';
 
-export interface AlertProps extends Omit<MuiAlertProps, 'variant' | 'severity'> {
+export interface AlertProps extends Omit<MuiAlertProps, 'variant' | 'severity' | 'title'> {
   /**
    * Alert variant
    * @default 'standard'
@@ -71,7 +69,8 @@ export const Alert: React.FC<AlertProps> = ({
       action={action}
       onClose={onClose}
       sx={{
-        borderRadius: theme.shape.custom?.md ?? theme.shape.borderRadius,
+        // Alerts use lg (12px) border radius from theme
+        borderRadius: theme.shape.custom?.lg ?? theme.shape.borderRadius,
         ...sx,
       }}
       {...props}

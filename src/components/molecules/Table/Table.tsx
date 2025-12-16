@@ -6,7 +6,6 @@
  */
 
 import React from 'react';
-import { useTheme } from '@mui/material/styles';
 import {
   Table as MuiTable,
   TableProps as MuiTableProps,
