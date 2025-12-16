@@ -55,8 +55,8 @@ export const Paper: React.FC<PaperProps> = ({
       variant={variant}
       square={square}
       sx={{
-        // Use theme shape tokens for border radius
-        borderRadius: square ? 0 : (theme.shape.custom?.md ?? theme.shape.borderRadius),
+        // Paper uses lg (12px) border radius from theme for containers
+        borderRadius: square ? 0 : (theme.shape.custom?.lg ?? theme.shape.borderRadius),
         ...sx,
       }}
       {...props}

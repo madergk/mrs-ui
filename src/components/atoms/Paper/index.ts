@@ -1,3 +1,1 @@
-export { Paper } from './Paper';
-export type { PaperProps } from './Paper';
-export default Paper;
+export { Paper, type PaperProps, Paper as default } from './Paper';

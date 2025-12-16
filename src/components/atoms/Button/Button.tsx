@@ -153,7 +153,8 @@ export const Button: React.FC<ButtonProps> = ({
 
     // Handle inherit (white) color
     if (isInheritWhite) {
-      const whiteStates = theme.palette.common.white._states;
+      // Access white states with type assertion since common.white is typed as string in MUI
+      const whiteStates = (theme.palette.common as any).white?._states;
       
       if (variant === 'contained') {
         styles.backgroundColor = whiteStates.main;
