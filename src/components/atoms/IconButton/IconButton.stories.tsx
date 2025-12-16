@@ -101,6 +101,11 @@ export const Colors: Story = {
 };
 
 export const DifferentIcons: Story = {
+  args: {
+    color: 'error',
+    size: 'large',
+  },
+
   render: () => (
     <Stack direction="row" spacing={2}>
       <IconButton>
